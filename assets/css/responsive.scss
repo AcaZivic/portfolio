@@ -1,0 +1,988 @@
+$fontDefault:Arial;
+$fontNew:Nunito;
+$darkBlue:#232a34;
+$green:#2ca46d;
+$darkGreen:#259563;
+$white:#FAF9F6;
+$blue:#303d4f;
+@mixin widHei($width,$height){
+  width:$width;
+  height: $height;
+}
+@mixin coverHelp{
+  height: 28.3rem;
+  text-align: center;
+}
+@media screen and (max-width: 1540px) {
+    #cover-content {
+      #mainPhoto-block{
+        width: 33%;
+        & article:last-child {
+          height: 81%;
+        }
+      }
+      #description-block{
+        h1{
+          font-size: 2.25rem;
+        }
+      }
+    }
+    #blueBg #service #service-blocks{ 
+       #service-block1,#service-block2,#service-block3,#service-block4 {
+        .appFrame{
+          width:30rem;
+          height: 18.6rem;
+          .appHeader{
+            width:28.5rem;
+          }
+          figure{
+            width:29.5rem;
+            height: 16.37rem;
+            img{
+              height: 16.37rem;
+            }
+            &:hover .appHover,.appHover{
+              width:29.5rem;
+              height: 16.37rem;
+              padding: 2.2rem 0rem;
+            }
+          }
+        }
+      }
+    }
+    #project #project-blocks{
+      .project-block{
+        width: 45%;
+      }
+    }
+  } 
+@media screen and (max-width: 1393px) {
+    #cover {
+      padding-bottom: 9rem;
+      &-content{
+        #description-block{
+            width: 57%;
+            h1{
+              font-size: 2.1rem;
+            }
+        }
+        #mainPhoto-block{
+          article:last-child{
+            height: 75%;
+          }
+        }
+      }
+    }
+   #blueBg #service #service-blocks{ 
+    #service-block1,#service-block2,#service-block3,#service-block4 {
+     .appFrame{
+       width:29rem;
+       height: 18.1rem;
+       .appHeader{
+         width:27.5rem;
+       }
+       figure{
+         width:28.5rem;
+         height: 15.82rem;
+         img{
+          height: 15.82rem;
+         }
+         &:hover .appHover,.appHover{
+           width:28.5rem;
+           height: 15.82rem;
+         }
+       }
+     }
+   }
+ }
+ #skill #skill-blocks{
+    .skill-block{
+      width: 30%;
+    }
+  }
+  #contact .center-block{
+    #contactMe{
+      width: 40%;
+    }
+  }
+}
+  @media screen and (max-width: 1220px) {
+    #cover{
+      padding-bottom: 4rem;
+      &-content{
+        width: 80%;
+        #description-block {
+          width: 55%;
+          h1 {
+            font-size: 1.85rem;
+          }
+        }
+        #mainPhoto-block{
+          article:last-child{
+            height: 68.6%;
+          }
+        }
+      }
+    }
+    #aboutMe {
+      height: 55rem;
+      #about-region {
+        height: 38rem;
+        align-items: center;
+        & > .about-block{
+          @include widHei(47%,19rem);
+        }
+        #about-min-region {
+          width: 50%;
+          align-content: center;
+          .verLine {
+            display: none;
+          }
+          .horLine {
+            display: block;
+          }
+          > .about-block {
+            @include widHei(100%, 19rem);
+            .infoLine:last-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    #blueBg #service #service-blocks{ 
+      #service-block1,#service-block2,#service-block3,#service-block4 {
+        width: 100%;
+        justify-content: space-between;
+     }
+   }
+   #project #project-blocks{
+    .project-block{
+      .appFrame{
+        width:23.6rem;
+        height: 16.6rem;
+        .appHeader{
+          width:22.3rem;
+        }
+        figure{
+          width:23.1rem;
+          img{
+            height: 14.34rem;
+          }
+          &:hover .appHover{
+            width:23.1rem;
+            height: 14.34rem;
+            padding: 1.85rem 0rem;
+          }
+        }
+      }
+      
+     }
+    .project-block{
+      width: 49%;
+    }
+    .project-block:last-child{
+      .appFrame figure .appHover,.appFrame figure:hover .appHover{
+        @include widHei(23.1rem,14.34rem);
+      }
+    }
+  }
+  footer .center-block {
+    #foot-blocks{
+      figure {
+        width: 30%;
+      }
+    }
+  }
+}
+  @media screen and (max-width: 1061px) {
+    html {
+      font-size: 0.95em;
+    }
+    #cover #cover-content {
+      #mainPhoto-block article{
+        img {
+          width: 16rem;
+        }
+        &:last-child {
+          height: 65%;
+        }
+      }
+      #description-block h1 {
+        font-size: 1.80rem;
+        letter-spacing: 0.05rem;
+      }
+    }
+    #project #project-blocks{
+      .project-block:nth-child(5),.project-block:nth-child(6){
+        .appFrame {
+          height: 17.1rem;
+          figure {
+            img{
+              height: 14.77rem;
+            }
+            &:hover .appHover{
+              @include widHei(23.1rem,14.77rem);
+            }
+          }
+          
+        }
+      }
+      .project-block:last-child{
+        .appFrame figure .appHover,.appFrame figure:hover .appHover{
+          @include widHei(23.1rem,14.77rem);
+        }
+      }
+    }
+    #contact .center-block{
+      #contactMe{
+        width: 42%;
+      }
+    }
+    footer .center-block #foot-blocks figure a img{
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  @media screen and (max-width: 1005px) {
+    #cover #cover-content {
+      flex-direction: column;
+      #mainPhoto-block {
+        width: 20rem;
+        @include coverHelp();
+        article:last-child{
+            height: 75.5%;
+        }
+      }
+      #description-block{
+        width: 70%;
+        @include coverHelp();
+        article{
+          .button {
+            padding: 1.47rem 2.5rem;
+            
+          }
+        }
+        h1{
+          font-size: 1.80rem;
+        }
+      }
+    }
+    #blueBg { 
+      & > i:first-child,& > i:last-child{
+        font-size:14rem;
+        line-height: 14rem;
+      }
+
+      #service #service-blocks{
+        justify-content: center;
+        #service-block1,#service-block2,#service-block3,#service-block4 {
+          width: 75%;
+          justify-content: center;
+       }
+      }
+      
+   }
+   #project #project-blocks{
+     .project-block{
+       width: 50%;
+     }
+     .project-block:nth-child(5){
+      .appFrame {
+        figure {
+          &:hover .appHover{
+            padding: 3rem 0rem;
+          }
+        }
+        
+      }
+    }
+   }
+   #contact .center-block{
+    #contactMe{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 85%;
+      margin: 0px auto;
+      #contactIcons{
+        width:50%;
+      }
+    }
+    .verLine{
+      display: none;
+    }
+    .horLine{
+      display: block;
+    }
+    #contactForm{
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+  footer .center-block #foot-blocks{
+    .links:nth-child(1){
+      ul li {
+        margin-top: 2.3rem;
+      }
+    }
+    .links i{
+      width: 100%;
+    }
+  }
+  }
+  @media screen and (max-width: 791px) {
+    html {
+      font-size: 0.85em;
+    }
+    #cover #cover-content #description-block article {
+      height: 12rem;
+    }
+    #aboutMe {
+      height: 60rem;
+      #about-region  {
+        & > .about-block{
+          width: 76%;
+          margin: 3rem auto;
+        }
+        #about-min-region {
+          @include widHei(100%, auto);
+          > .about-block {
+            width: 48%;
+          }
+          .verLine {
+            display: block;
+          }
+          .horLine {
+            display: none;
+          }
+        }
+      }
+    }
+    #blueBg #service #service-blocks{ 
+      #service-block1,#service-block2,#service-block3,#service-block4 {
+        width: 80%;
+       .appFrame{
+         width: 32.15rem;
+         height: 19.7rem;
+         .appHeader{
+           width:30rem;
+         }
+         figure{
+           width:31.6rem;
+           height: 17.32rem;
+           img{
+            height: 17.32rem;
+           }
+           &:hover .appHover,.appHover{
+             width:31.6rem;
+             height: 17.32rem;
+           }
+         }
+       }
+     }
+   }
+   #project #project-blocks{
+     @for $nch from 1 through 6{
+       .project-block:nth-child(#{$nch}){
+        width: 75%;
+        margin: 1.5rem auto;
+        .appFrame{
+          width:26.2rem;
+          height: 19rem;
+          .appHeader{
+            width:24rem;
+          }
+          figure{
+            width:25.7rem;
+            height: 16.5rem;
+            img{
+             height: 16.5rem;
+            }
+            &:hover .appHover{
+              width:25.7rem;
+              height: 16.5rem;
+              padding: 3rem 0rem;
+            }
+          }
+        }
+       }
+     }
+      .project-block:nth-child(6){
+       .appFrame {
+         figure {
+           &:hover .appHover,.appHover{
+             @include widHei(25.7rem, 16.5rem);
+             padding: 6.5rem 0rem;
+           }
+         }
+         
+       }
+     }
+  }
+  #contact .center-block{
+    #contactMe{
+      width: 90%;
+      #contactIcons{
+        width:60%;
+      }
+    }
+  }
+}
+  @media screen and (max-width: 670px) {
+    #logo {
+      width: 100%;
+    }
+    nav {
+      @include widHei(100%, 5rem);
+      ul li {
+        margin-left: 0px;
+        a{
+          font-size: 1.3rem;
+        }
+      }
+    }
+    #logo {
+      text-align: center;
+    }
+    #cover {
+      padding: 13rem 0rem;
+      padding-bottom: 0rem;
+      & &-content #mainPhoto-block article:last-child{
+        width: 88%;
+      }
+    }
+    #blueBg { 
+      & > i:first-child,& > i:last-child {
+        font-size:10rem;
+        line-height: 10rem;
+      }
+      #service #service-blocks{
+        #service-block1,#service-block2,#service-block3,#service-block4 {
+          width: 100%;
+       }
+      }
+   }
+   #skill #skill-blocks{
+    .skill-block{
+      width: 49%;
+    }
+  }
+   #project #project-blocks{
+     @for $nch from 1 through 6{
+       .project-block:nth-child(#{$nch}){
+        width: 90%;
+        margin: 1.5rem auto;
+       }
+     }
+  }
+  #contact .center-block{
+    #contactMe{
+      width: 100%;
+      flex-direction: column;
+      #contactIcons{
+        width:60%;
+      }
+    }
+  }
+  footer .center-block {
+    & > ul{
+      width: 80%;
+    }
+    #foot-blocks{
+      .links{
+        width: 100%;
+        padding: 1rem 0rem;
+        border: 1px solid $blue;
+        border-radius: 1rem;
+      }
+      figure {
+        margin: 3rem auto;
+        width: 35%;
+      }
+    }
+  }
+  }
+  @media screen and (max-width: 490px) {
+    #cover #cover-content #description-block h1{
+      font-size:1.7rem;
+      line-height: 3rem;
+    }
+    #aboutMe {
+      height: 85rem;
+      #about-region  {
+        & > .about-block{
+          width: 96%;
+        }
+        #about-min-region {
+          .about-block {
+            width: 100%;
+          }
+          .verLine {
+            display: none;
+          }
+          .horLine {
+            display: block;
+          }
+        }
+      }
+    }
+    #blueBg { 
+      & > i:first-child {
+        right: 2.2rem;
+      }
+      & > i:last-child {
+        left: 1.2rem;
+      }
+      #service #service-blocks{
+        #service-block1,#service-block2,#service-block3,#service-block4 {
+          .appFrame{
+            width:25.5rem;
+            height: 16.4rem;
+            .appHeader{
+              width:24rem;
+            }
+            figure{
+              width:25rem;
+              height: 14.1rem;
+              img{
+               height: 14.1rem;
+              }
+              &:hover .appHover,.appHover{
+                width:25rem;
+                height: 14.1rem;
+                padding: 0.25rem 0rem;
+              }
+            }
+          }
+       }
+      }
+   }
+   #project #project-blocks{
+    @for $nch from 1 through 6{
+      .project-block:nth-child(#{$nch}){
+       width: 100%;
+       margin: 1.5rem auto;
+      }
+    }
+ }
+ #contact .center-block{
+  #contactMe{
+    #contactIcons 
+    {
+      width: 100%;
+       .contactIcon {
+          text-align: center;
+          p i{
+            width:100%;
+            font-size: 2rem;
+            margin-bottom: 0.7rem;
+          }
+        }
+      }
+    }
+    #contactForm form .formRow{
+      input[type='text'],input[type='email'],textarea{
+        width: 90%;
+      }
+      input[type='text']:last-child{
+        margin-left: 0%;
+        margin-top: 2rem;
+      }
+    }
+  }
+  }
+  @media screen and (max-width:450px){
+    nav{
+        margin-top: 1rem;
+        height: 12rem;
+        ul{
+          width:100%;
+          li{
+            padding: 0.2rem 0rem;
+            display: inline-block;
+            width:100%;
+            text-align: center;
+            border-bottom: 2px solid $white;
+            &:hover::after,&.active-link::after{
+              opacity: 0;
+            }
+          }
+          
+        }
+    }
+    #cover{
+        padding: 25rem 0rem 0rem 0rem;
+    }
+    #description-block{
+        width:100%;
+    }
+    .button{
+        color: $darkGreen;
+        border: 2px solid $darkGreen;
+    }
+      #aboutMe .title-block {
+        hr{
+          margin: 0.5rem auto;
+        }
+        h2 {
+          text-align: center;
+        }
+    }
+    #blueBg { 
+      & > i:first-child,& > i:last-child {
+        font-size:7rem;
+        line-height: 7rem;
+        
+      }
+      & > i:first-child{
+        right:1.7rem;
+      }
+      #service #service-blocks{
+        #service-block1,#service-block2,#service-block3,#service-block4 {
+          border-radius: 0rem;
+          .serviceFrame{
+            .web-icon,.dat-icon,.app-icon,.seo-icon{
+              @include widHei(6rem, 6rem);
+              i{
+                font-size: 2.8rem;
+              }
+            }
+          }
+          .appFrame{
+            width:24rem;
+            height: 15.6rem;
+            .appHeader{
+              width:21rem;
+            }
+            figure{
+              width:23.3rem;
+              img{
+                height: 13.2rem;
+              }
+              &:hover .appHover,.appHover{
+                width:23.3rem;
+                height: 13.2rem;
+                font-size:0.9rem;
+              }
+            }
+          }
+       }
+      }
+   }
+   #skill #skill-blocks{
+    .skill-block{
+      width: 100%;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid $blue;
+    }
+  }
+   #project #project-blocks{
+     @for $nch from 1 through 6{
+       .project-block:nth-child(#{$nch}){
+        border-radius: 0rem;
+        .appFrame{
+          width:24rem;
+          height: 15.6rem;
+          .appHeader{
+            width:21rem;
+          }
+          figure{
+            width:23.3rem;
+            img{
+              height: 13.2rem;
+            }
+            &:hover .appHover{
+              width:23.3rem;
+              height: 13.2rem;
+              padding: 1.45rem 0rem;
+            }
+          }
+        }
+       }
+     }
+     .project-block:nth-child(6){
+      .appFrame {
+        figure {
+          &:hover .appHover,.appHover{
+            @include widHei(23.3rem, 13.2rem);
+            padding: 5.5rem 0rem;
+          }
+        }
+      }
+    }
+  }
+  #contact .center-block .title-block {
+    hr{
+      margin: 0.5rem auto;
+    }
+    h2,h3{
+      text-align: center;
+    }
+}
+footer .center-block {
+  & > ul{
+    width: 90%;
+  }
+  #foot-blocks{
+    figure {
+      margin: 3rem auto;
+      width: 50%;
+    }
+  }
+}
+}
+@media  screen and (max-width:425px) {
+  #service #service-blocks{
+    #service-block1,#service-block2,#service-block3,#service-block4 {
+      .appFrame{
+        width:24rem;
+        height: 15.6rem;
+        .appHeader{
+          width:21rem;
+        }
+        figure{
+          width:21.9rem;
+          img{
+            height: 13.2rem;
+          }
+          &:hover .appHover,.appHover{
+            width:21.9rem;
+            height: 13.2rem;
+            font-size:0.9rem;
+          }
+        }
+      }
+   }
+  }
+  #project #project-blocks{
+    @for $nch from 1 through 6{
+      .project-block:nth-child(#{$nch}){
+       border-radius: 0rem;
+       .appFrame{
+         width:24rem;
+         height: 15.6rem;
+         .appHeader{
+           width:21rem;
+         }
+         figure{
+           width:21.9rem;
+           img{
+             height: 13.2rem;
+           }
+           &:hover .appHover{
+             width:21.9rem;
+             height: 13.2rem;
+             padding: 1.45rem 0rem;
+           }
+         }
+       }
+      }
+    }
+    .project-block:nth-child(6){
+     .appFrame {
+       figure {
+         &:hover .appHover,.appHover{
+           @include widHei(21.9rem, 13.2rem);
+           padding: 5.5rem 0rem;
+         }
+       }
+     }
+   }
+ }
+}
+  @media screen and (max-width: 376px) {
+    .center-block{
+      width:85%;
+    }
+    #cover #cover-content{
+      width:auto;
+      #description-block h1{
+        line-height: 3.5rem;
+      }
+      #mainPhoto-block {
+        width: 18.8rem;
+        & article img {
+          width: 15.5rem;
+          left: 1.1rem;
+        }
+      }
+    }
+    #aboutMe #about-region > .about-block {
+      width: 100%;
+      height: 22rem;
+    }
+    @keyframes floatImage {
+      0% {
+        transform: translateY(-1.5rem) translateX(1.8rem);
+      }
+  
+      50% {
+        transform: translateY(0.5rem) translateX(0.5rem);
+      }
+  
+      100% {
+        transform: translateY(-1.5rem) translateX(1.8rem);
+      }
+    }
+    #blueBg {   
+      #service #service-blocks{
+        #service-block1,#service-block2,#service-block3,#service-block4 {
+          .appFrame{
+            width:25rem;
+            height: 15.5rem;
+            .appHeader{
+              width:20rem;
+            }
+            figure{
+              width:21rem;
+              img{
+                height: 13.1rem;
+              }
+              &:hover .appHover,.appHover{
+                width:21rem;
+                
+              }
+            }
+          }
+       }
+      }
+   }
+   #project #project-blocks{
+    @for $nch from 1 through 6{
+      .project-block:nth-child(#{$nch}){
+        .appFrame{
+          width:25rem;
+          height: 15.5rem;
+          .appHeader{
+            width:20rem;
+          }
+          figure{
+            width:21rem;
+            img{
+              height: 13.1rem;
+            }
+            &:hover .appHover{
+              width:21rem;
+              height: 13.1rem;
+              padding: 1.5rem 0rem;
+            }
+          }
+       }
+      }
+    }
+    .project-block:nth-child(6){
+     .appFrame {
+       figure {
+         &:hover .appHover,.appHover{
+           @include widHei(21rem, 13.1rem);
+           padding: 5.5rem 0rem;
+         }
+       }
+     }
+   } 
+   }
+  }
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 0.74em;
+    }
+    .center-block {
+      width: 95%;
+    }
+    .button{
+      padding: 1.5rem 2.8rem;
+    }
+    #cover #cover-content #mainPhoto-block article {
+      img {
+        width: 16.5rem;
+      }
+      &:last-child {
+        height: 77.2%;
+      }
+    }
+    #aboutMe #about-region > .about-block {
+      width: 95%;
+    }
+    #blueBg { 
+      & > i:first-child,& > i:last-child {
+        font-size:6.3rem;
+        line-height: 6.3rem;
+      } 
+        #service #service-blocks{
+          #service-block1,#service-block2,#service-block3,#service-block4 {
+            .appFrame{
+              width:24rem;
+              height: 15.5rem;
+              .appHeader{
+                width:22rem;
+              }
+              figure{
+                width:23.2rem;
+                img{
+                  height: 13rem;
+                }
+                &:hover .appHover,.appHover{
+                  width:23.2rem;
+                  height: 13rem;
+                }
+              }
+            }
+         }
+        }
+  }
+  #project #project-blocks{
+    @for $nch from 1 through 6{
+      .project-block:nth-child(#{$nch}){
+        .appFrame{
+          width:24rem;
+          height: 15.5rem;
+          .appHeader{
+            width:22rem;
+          }
+          figure{
+            width:23.2rem;
+            img{
+              height: 13rem;
+            }
+            &:hover .appHover{
+              width:23.2rem;
+              height: 13rem;
+            }
+          }
+        }
+       }
+      }
+      .project-block:nth-child(3){
+        .appFrame {
+          height: 16.2rem;
+          figure {
+            height: 13.8rem;
+            img{
+              height: 13.8rem;
+            }
+            &:hover .appHover{
+              @include widHei(23.2rem, 13.8rem);
+              
+            }
+          }
+        }
+      }
+    .project-block:nth-child(6){
+     .appFrame {
+       figure {
+         &:hover .appHover,.appHover{
+           @include widHei(23.2rem, 13rem);
+           padding: 5.5rem 0rem;
+         }
+       }
+     }
+   }
+  } 
+  #contact .center-block #contactMe figure img{
+    width: 17rem;
+    width: 20rem;
+    margin-left: -25px;
+    margin-top: -10px;
+  }
+}

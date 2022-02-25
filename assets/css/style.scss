@@ -1,0 +1,862 @@
+/* Start whole project */
+$fontDefault:Arial;
+$fontNew:Nunito;
+$darkBlue:#232a34;
+$green:#2ca46d;
+$darkGreen:#259563;
+$white:#FAF9F6;
+$blue:#303d4f;
+$lightBlue: #00467d;
+  * {
+      margin: 0px;
+      padding: 0px;
+      font-family: $fontNew, sans-serif;
+      list-style-type: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+  @mixin dis-flex($dis,$jus,$align) {
+    display: $dis;
+    justify-content: $jus;
+    align-items: $align;
+    flex-wrap: wrap;
+  }
+  @mixin pos($pos,$index:1,$left:0,$top:0,$value:0){
+    position: $pos;
+    z-index: $index;
+    @if $value==0{
+      left:$left;
+      top:$top;
+    }@else if $value==1 {
+      right: $left;
+      top: $top;
+    }@else if $value==2 {
+      left: $left;
+      bottom: $top;
+    }
+  }
+  @mixin marPad($mar1,$mar2,$mar3,$mar4,$pad1:0,$pad2:0,$pad3:0,$pad4:0){
+    margin: $mar1 $mar2 $mar3 $mar4;
+    padding: $pad1 $pad2 $pad3 $pad4;
+  }
+  @mixin widHei($width,$height){
+    width:$width;
+    height: $height;
+  }
+  @mixin borderSet($width,$style,$color,$radius:0px,$radius2:0px){
+    border: $width $style $color;
+    @if $radius2!=0 {
+      border-radius: $radius $radius2;
+    }@else{
+      border-radius: $radius;
+    }
+  }
+  @mixin fontSet($size,$color,$space,$weight:bold,$lineheight:0){
+    font-weight: $weight;
+    font-size: $size;
+    // font:{
+    //   size: $size;
+    //   weight:$weight;
+    // }
+      color: $color;
+      letter-spacing: $space;
+      @if $lineheight==0{
+        line-height: $size;
+      }@else{
+        line-height: $lineheight;
+      }
+  }
+  @mixin line($value){
+    background-color: $darkBlue;
+    border-radius: 2rem;
+    @if($value==0){
+      width: 0.88rem;
+      height: 11rem;
+      margin: 4rem 0rem;
+    }@else if ($value==1){
+      height: 0.88rem;
+      width: 11rem;
+      margin: 2rem auto;
+      display: none;
+    }
+  }
+  html {
+    font-size: 1em;
+  }
+  body {
+    background-color: $white;
+  }
+  .center-block {
+    width: 78%;
+    margin: 0px auto;
+    header &{
+      @include dis-flex(flex,space-between,center);
+    }
+  }
+  .bold{
+    font-weight: bold;
+  }
+  .textCenter {
+    text-align: center;
+  }
+  .d-block {
+    display: block;
+    width: 100%;
+  }
+  /* End whole project */
+  /* Start header */
+  .heightMargin{
+    height: 5.7rem;
+    margin: 0.15rem 0rem;
+  }
+  header {
+    @include pos(absolute,2);
+    width: 100%;
+  }
+  #logo a img {
+    @extend .heightMargin;
+  }
+  nav ul {
+    @extend .heightMargin;
+    @include dis-flex(flex,space-between,center);
+    li {
+      position: relative;
+      margin-left: 1rem;
+      &.active-link{
+        ::after{
+          opacity: 1;
+          bottom: -1px;
+        }
+        a{
+          color: $darkGreen;
+        }
+      }
+      &::after{
+          content: "";
+          height: 2px;
+          width: 80%;
+          margin-left: 10%;
+          background-color: $darkGreen;
+          border-radius: 1rem;
+          position: absolute;
+          left: 0%;
+          bottom: -20px;
+          opacity: 0;
+          transition: 0.3s ease-in-out;
+      }
+      &:hover::after,&.active-link::after{
+        opacity: 1;
+        bottom: -5px;
+      }
+      a{
+        color: $darkBlue;
+        font-size: 1.2rem;
+        transition: 0.3s ease-in-out;
+        &:hover{
+          color: $darkGreen;
+        }
+      }
+    }
+  }
+  /* End header */
+  /* Start cover */
+  .green {
+    color: $green;
+    text-decoration: underline;
+  }
+  @mixin flexContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  #cover {
+    @include pos(relative,1);
+    @include marPad(0px,0px,0px,0px,9rem,0rem,12rem,0rem);
+    width: 100%;
+    background: {
+      image: url(../img/circleHeader.svg), linear-gradient(171deg, #e5ebf3, #8ea4c2);
+      position: 50% 100%, 0px 0px;
+      size: contain, auto;
+      repeat: no-repeat, repeat;
+    }
+    &-content {
+      width: 75%;
+      @include dis-flex(flex,space-between,center);
+      @include marPad(0px,auto,0px,auto);
+      #mainPhoto-block {
+        @include pos(relative);
+        @include widHei(27%, 35.5rem);
+        transform: rotate(5deg);
+        & article {
+          & img {
+            @include pos(absolute,1,1.3rem,1rem);
+            @include widHei(93.5%, auto);
+            animation: floatImage 5s ease-in-out infinite;
+          }
+          &:last-child {
+            @include pos(absolute,1,10px, 0px);
+            @include widHei(96%, 83%);
+            @include borderSet(2px,solid ,$darkBlue , 1.2rem);
+            border-top: none;
+            border-right: none;
+            // border:{
+            //   top: none;
+            //   right: none;
+            // }
+          }
+        }
+      }
+      #description-block {
+        @include flexContent;
+        @include widHei(55%, 35.5rem);
+        article {
+          @include widHei(100%, 11rem);
+          .button {
+            display: inline-block;
+            transition: 0.3s ease-in-out;
+            @include fontSet(1.08rem,$darkGreen,3px);
+            @include marPad(0px,0px ,0px ,0px ,1.1rem ,2.15rem ,1.1rem , 2.15rem);
+            @include borderSet(2px, solid, $darkGreen, 0.88rem);
+            &:active {
+              transform: translateY(2rem);
+            }
+            &:hover {
+              border-color: $darkBlue;
+              color: $darkBlue;
+              transform: translateY(0.3rem);
+            }
+          }
+        }
+        h1 {
+          @include fontSet(2.3rem, $darkBlue, 0.1rem, bold,3.8rem );
+          span{
+            @extend .green;
+          }
+        }
+      }
+    }
+  }
+  @keyframes floatImage {
+    0% {
+      transform: translateY(-1.5rem) translateX(3.5rem);
+    }
+    50% {
+      transform: translateY(0.5rem) translateX(0.5rem);
+    }
+    100% {
+      transform: translateY(-1.5rem) translateX(3.5rem);
+    }
+  }
+  /* End cover */
+  /* Start about me */
+  .titleMain{
+    h2 {
+      @include fontSet(1.95rem,$darkBlue,0.2rem);
+    }
+    h3 {
+      @include fontSet(1.05rem,$darkBlue,0.05rem,normal,1.5rem);
+    }
+    hr {
+      @include widHei(17rem, 0.25rem);
+      background-color: $darkGreen;
+      border: none;
+      margin: 0.5rem 0rem;
+    }
+  }
+  #aboutMe {
+    @include widHei(100%, auto);
+    @include pos(relative, 1, 0px,-1rem);
+    @include marPad(0px,0px, 0px, 0px, 4rem, 0rem,4rem , 0rem);
+    background-color: $white;
+    .title-block {
+      @extend .titleMain;
+    }
+    #about-region {
+      margin-top: 4rem;
+      @include widHei(auto, 19rem);
+      @include dis-flex(flex,space-between, center);
+      .about-block { 
+        @include pos(relative);
+        @include widHei(33%, inherit);
+        @include dis-flex(flex,center, center);
+        
+      }
+      & > .about-block{
+        @include borderSet(2px,solid,$darkBlue,1.8rem,0.3rem);
+        padding: 1.3rem;
+        text-align: justify;
+        i {
+          font-size: 3rem;
+          background-color: $white;
+          color: $darkGreen;
+          @include pos(absolute,1,-1.1rem,-0.85rem,1);
+        }
+        p{
+          @include fontSet(1.1rem,$darkBlue, 0rem, normal, 2rem);
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+      #about-min-region {
+        @include widHei(63%, inherit);
+        @include dis-flex(flex,space-between,center);
+        > .about-block {
+          width: 43%;
+          padding: 0rem 2.2rem;
+          .info-block{
+            @extend .d-block;
+            @extend .textCenter;
+            p{
+              @include fontSet(1.1rem,$darkBlue, 0rem, bold, 2rem);
+            }
+          }
+          
+        }
+        .verLine {
+          @include line(0);
+        }
+        .horLine {
+          @include line(1);
+        }
+        .infoLine {
+          @include widHei(20%,0.2rem);
+          margin: 0px auto;
+          border: none;
+          border-radius: 1rem;
+          background-color: $darkGreen;
+        }
+      }
+    }
+  }
+  /* End about me */
+  /* Start services */
+  .lineset{
+    width: 1rem;
+    height: 0.14rem;
+    background-color: $white;
+    border-radius: 1rem;
+  }
+  .title{
+    h2{
+      @include fontSet(0.86rem,$darkGreen,0.05rem,normal,2rem);
+    }
+    h3{
+      @include fontSet(1.95rem,$white,0.2rem,bold,3.2rem);
+    }
+    hr{
+      @include widHei(17rem, 0.25rem);
+      background: linear-gradient(90deg, $green 0%, $darkGreen 15%, $blue 67%, $darkBlue 100%);
+      border: none;
+      border-radius: 1rem;
+      margin: 10px auto;
+    }
+  }
+  .bgIcon{
+    @include fontSet(16rem, $darkGreen, 0px, bold);
+    opacity: 0.16;
+  }
+  .frame{
+    @include widHei(33.5rem, 20.6rem);
+              background-color: $lightBlue;
+              position: relative;
+                figure{
+                  @include widHei(33rem, 18.55rem);
+                  @include pos(relative, 1, 0.25rem,2rem );
+                  img{
+                    @include widHei(inherit, 18.3rem);
+                    object-fit: cover;
+                    border: 1px solid $darkBlue;
+                    opacity: 0.83;
+                  }
+                  &:hover .appHover{
+                    @include widHei(33rem, 18.3rem);
+                    opacity: 1;
+                    top: 0%;
+                    left: 0%;
+                    padding: 5rem 0rem;
+                  }
+                  .appHover{
+                    @include pos(absolute, 1,50% ,50% );
+                    @include widHei(0rem,0rem );
+                    padding: 0rem;
+                    overflow: hidden;
+                    opacity: 0;
+                    background-color: rgba($darkGreen,0.77);
+                    transition: 0.3s linear;
+                    p{
+                      color: $white;
+                      padding: 0rem 1rem;
+                      span{
+                        text-transform: uppercase;
+                      }
+                      span:last-child{
+                        @include fontSet(1.14rem, $lightBlue, 0.05rem, bold );
+                      }
+                    }
+                  }
+                }
+                .appHeader{
+                  @include dis-flex(flex, space-between, center);
+                  @include widHei(31.5rem, 2rem);
+                  @include pos(absolute, 1, 0.25rem, 0rem, 1);
+                  p{
+                    color: $white;
+                  }
+                  .control{
+                    @include dis-flex(flex, space-around, center);
+                    @include widHei(8.5rem, inherit);
+                    .min{
+                      display: flex;
+                      align-items: center;
+                      & .line{
+                        @extend .lineset;
+                      }
+                    }
+                    .max{
+                      @include widHei(1rem, 2rem);
+                      &-box{
+                        @include widHei(1rem, 1rem);
+                        margin-top: 0.4rem;
+                        position: relative;
+                        @for $i from 0 through 3{
+                          .line#{$i+1}{
+                            position: absolute;
+                            @extend .lineset;
+                            transform: rotate(90deg*$i);
+                            @if $i==0{
+                              height: 0.13rem;
+                              left:0rem;
+                              top:0.05rem;
+                            }@else if ($i+1)%2==0{
+                              top: 0.5rem;
+                              left: -0.97rem + $i * 0.49rem;
+                            }@else{
+                              left: 0rem;
+                              top:0.97rem;
+                            }          
+                          }
+                        }
+                      }
+                      
+                    }
+                    .ext{
+                      @include widHei(1rem,2rem );
+                      &-box{
+                        @include widHei(1rem, 1rem);
+                        margin-top: 0.5rem;
+                        position: relative;
+                        .line1, .line2{
+                          @extend .lineset;
+                          width: 1.1rem;
+                        }
+                        .line1{
+                          transform: rotate(45deg);
+                          position: absolute;
+                          bottom: 0.5rem;
+                        }
+                        .line2{
+                          transform: rotate(-45deg);
+                          position: absolute;
+                          bottom: 0.5rem;
+                        }
+                      }
+                    }
+                  }
+                }
+  }
+  #blueBg {
+    background-color: $darkBlue;
+    @include pos(relative, 1);
+    @include marPad(4rem, 0rem,3rem , 0rem,4rem ,0rem ,4rem ,0rem );
+    @include widHei(100%, auto);
+    border-radius: 0.5rem;
+    & > i:first-child,& > i:last-child{
+      @extend .bgIcon;
+    }
+    & > i:first-child{
+        @include pos(absolute,0 ,4rem ,0.5rem ,1 );
+        transform: rotate(-44deg);
+    }
+    & > i:last-child{
+      @include pos(absolute,0 ,3rem ,1.3rem,2);
+      transform: rotate(38deg);
+  }
+    #service{
+      @extend .textCenter;
+      &-title{
+        @extend .title;
+      }
+      #service-blocks{
+        margin-top:6.6rem;
+        @include dis-flex(flex,space-between ,center );
+        @for $i from 1 through 4{
+          #service-block#{$i}{
+            @include dis-flex(flex, center, center);
+            @include widHei(47%, auto);
+            @include marPad(0rem, 0rem,4rem ,0rem , 1.5rem, 1rem,1.5rem ,1rem );
+            border-bottom: 2px solid $blue;
+            border-radius: 1rem;
+            .serviceFrame{
+              @include dis-flex(flex,center, center);
+              flex-direction: column;
+              @include widHei(20rem, 13rem);
+              p{
+                @include fontSet(1.2rem,$green,0.1rem,bold,1.5rem);
+                text-align: center;
+                text-transform: uppercase;
+              }
+              @each $name in (web),(dat),(seo),(app) {
+                .#{$name}-icon{
+                  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+                  background-color: $darkGreen;
+                  margin: 1rem 0rem 2rem 0rem;
+                  @include widHei(8rem, 8rem);
+                  @include dis-flex(flex,center, center);
+                  i{
+                    font-size: 3.8rem;
+                    color: $darkBlue;
+                  }
+                }
+              }
+            }
+            .appFrame{
+                @extend .frame;
+                figure .appHover,figure:hover .appHover{
+                  @include widHei(33rem, 18.3rem);
+                    opacity: 1;
+                    top: 0%;
+                    left: 0%;
+                    padding: 3.5rem 0rem;
+                    background-color: rgba($darkGreen,0.87);
+                }
+              }
+          }
+        }
+        
+        }
+      }
+    }
+  /* End services */
+  /* Start skills */
+  $fontValue:1rem;
+  @function sValue($size){
+    @return 10*$size*$fontValue;
+  }
+  @function sPos($size){
+    @return (10 - (10*$size))/2 * $fontValue;
+  }
+  #skill{
+    @extend .textCenter;
+    margin: 3rem auto;
+    &-title{
+      @extend .title;
+    }
+    #skill-blocks{
+      margin-top:6.6rem;
+      margin-bottom: 8rem;
+      @include dis-flex(flex,space-between ,center);
+      .skill-block{
+        width: 10rem;
+        .skill-frame{
+          position: relative;
+          @include widHei(10rem, 10rem);
+          margin:0px auto;
+          background-color: $lightBlue;
+          clip-path: circle(50% at 50% 50%);
+          .percent{
+            @include dis-flex(flex, center , center );
+            background-color: $darkGreen;
+            border-radius: 50%;
+            p{
+              @include fontSet(1.1rem,$darkBlue ,0.1rem , bold);
+            }
+          }
+        }  
+        .skill-title{
+            margin: 2rem 0rem;
+            width: 100%;
+            p{
+              @include fontSet(1rem,$white ,0.1rem , bold);
+            }
+        }
+      }
+      $i:1;
+      @while($i<=6){
+        .skill-block:nth-child(#{$i}){
+          .skill-frame{
+            .percent{
+              @if($i==1){
+                @include widHei(sValue(0.9),sValue(0.9));
+                @include pos(absolute, 1, sPos(0.9), sPos(0.9) );
+              }@else if($i==6){
+                @include widHei(sValue(0.9),sValue(0.9));
+                @include pos(absolute, 1, sPos(0.9), sPos(0.9) );
+              }@else if($i==2){
+                @include widHei(sValue(0.8),sValue(0.8));
+                @include pos(absolute, 1, sPos(0.8), sPos(0.8) );
+              }@else if($i==5){
+                @include widHei(sValue(0.8),sValue(0.8));
+                @include pos(absolute, 1, sPos(0.8), sPos(0.8) );
+              }@else if($i==4){
+                @include widHei(sValue(0.75),sValue(0.75));
+                @include pos(absolute, 1, sPos(0.75), sPos(0.75) );
+              }@else{
+                @include widHei(sValue(0.5),sValue(0.5));
+                @include pos(absolute, 1, sPos(0.5), sPos(0.5) );
+              }
+            }
+          }  
+        }
+        $i:$i+1;
+      }
+      }
+  }
+  /* End skills */
+/* Start projects */
+#project{
+  @extend .textCenter;
+  margin: 3rem auto;
+  &-title{
+    @extend .title;
+  }
+  #project-blocks{
+    margin-top:6.6rem;
+    margin-bottom: 7rem;
+    @include dis-flex(flex,space-between ,center);
+    .project-block{
+      @include dis-flex(flex, center, center);
+      @include widHei(31%, auto);
+      @include marPad(0rem, 0rem,4rem ,0rem , 1.5rem, 1rem,1.5rem ,1rem );
+      border-bottom: 2px solid $blue;
+      border-radius: 1rem;
+      .appFrame{
+        @extend .frame;
+        width:26.2rem;
+        height: 17.3rem;
+        .appHeader{
+          width:24rem;
+        }
+        figure{
+          width:25.7rem;
+          height: 15rem;
+          img{
+           height: 15rem;
+          }
+          &:hover .appHover{
+            width:25.7rem;
+            height: 15rem;
+            padding: 2.5rem 0rem;
+          }
+        }
+      }
+    }
+    .project-block:last-child{
+      .appFrame{
+        figure .appHover,figure:hover .appHover{
+            @include widHei(25.7rem, 15rem);
+            padding: 6.5rem 0rem;
+            font-size: 1.1rem;
+            opacity: 1;
+            top: 0%;
+            left: 0%;
+            background-color: rgba($darkGreen,0.87);
+        }
+      }
+    }
+  }
+}
+/* End projects */
+/* Start contact */
+#contact{
+  @include pos(relative, 10, 0px,-1rem,2);
+  background-color: $white;
+  margin-top: 5rem;
+  width: 100%;
+  .center-block{
+    @include dis-flex(flex, space-between, center);
+    .title-block {
+      @extend .titleMain;
+      width: 100%;
+    }
+    #contactMe{
+      width: 35%;
+      figure{
+        width: 12rem;
+        height: 12rem;
+        margin: 2rem 2.5rem;
+        border-radius: 50%;
+        clip-path: circle(50% at 50% 50%);
+        img{
+          width: 15rem;
+        }
+      }
+      #contactIcons{
+        .contactIcon{
+          width: 100%;
+          text-align: left;
+          margin-left: 0.5rem;
+          margin-bottom: 1rem;
+          p{
+            @include fontSet(1.1rem, $darkBlue, 0.05rem, normal, 1.5rem);
+            i{
+              margin-right: 10px;
+              color: $darkGreen;
+              width:1.5rem;
+            }
+          }
+          
+        }
+      }
+    }
+    .verLine {
+      @include line(0);
+    }
+    .horLine{
+      @include line(1);
+    }
+    #contactForm{
+      width: 55%;
+      margin-top: 3rem;
+      form{
+        .formRow{
+          display: block;
+          width: 100%;
+          margin: 2rem 0rem;
+          text-align: center;
+          input,button,textarea{
+            border: 2px solid rgba(30,30,30,0.5);
+            padding:0.5rem;
+            border-radius: 0.3rem;
+            color: $darkBlue;
+            font-size: 0.9rem;
+            outline: none;
+          }
+          input:focus,button:focus,textarea:focus{
+            border: 2px solid $darkGreen;
+            font-weight: bold;
+          }
+          input[type='text']{
+            width: 37.5%;
+          }
+          input[type='text']:last-child{
+            margin-left: 5%;
+          }
+          input[type='email']{
+            width: 80%;
+          }
+          textarea{
+            width: 80%;
+            height: 10rem;
+            padding:1rem;
+          }
+          button{
+            color: $darkBlue;
+            font-size: 1.05rem;
+            letter-spacing: 0.1rem;
+            font-weight: bold;
+            padding: 1.1rem 2.15rem 1.1rem 2.15rem;
+            transition: 0.3s ease-in-out;
+            border-radius: 0.88rem;
+            background-color: none;
+            text-transform: uppercase;
+          }
+          button:hover{
+            cursor: pointer;
+            border: 2px solid $darkGreen;
+            padding: 1.1rem 3.15rem 1.1rem 3.15rem;
+            color: $darkGreen;
+            i{
+              color: $darkGreen;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+/* End contact */
+/* Start footer */
+footer{
+    @include pos(relative,1);
+    @include marPad(0px,0px,0px,0px,12rem,0rem,3rem,0rem);
+    width: 100%;
+    background: {
+      image: url(../img/circleFooter.svg), linear-gradient(171deg, #e5ebf3, #8ea4c2);
+      position: 50% 0%, 0px 0px;
+      size: contain, auto;
+      repeat: no-repeat, repeat;
+    }
+    .center-block{
+      @include dis-flex(flex, center, center);
+      padding-top: 2rem;
+      & > ul{
+        @include dis-flex(flex, center, center);
+        width:60%;
+        li{
+          margin: 0px 0.6rem;
+          a{
+            @include dis-flex(flex, center, center);
+            color: $darkBlue;
+            border-radius: 1rem;
+            border: 2px solid $darkBlue;
+            width: 3rem;
+            height: 3rem;
+            transition: 0.3s ease-in;
+            i{font-size: 1.15rem;}
+          }
+          &:hover{
+            a{
+              border-color: $darkGreen;
+              color: $darkGreen;
+            }
+          }
+          
+        }
+      }
+      #foot-blocks{
+        width: 100%;
+        margin-top: 3.5rem;
+        @include dis-flex(flex, space-between, center);
+        figure{
+          width: 25%;
+          a{
+            img{
+              width: 90%;
+              margin-left: 5%;
+            }
+          }
+        }
+        .links{
+          width: 30%;
+          text-align: center;
+          p{
+            font-weight: bold;
+            font-size: 1.3rem;
+          }
+          ul{
+            li {
+              margin-top: 1rem;
+              a{
+                @include fontSet(1.1rem, $darkBlue, 0.05rem, normal );
+                transition: 0.3s ease-in-out;
+                &:hover{
+                  color: $darkGreen;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+      #copy{
+        margin-top: 4rem;
+        p{
+          @include fontSet(1.1rem, $darkBlue, 0.1rem, normal );
+        }
+      }
+    }
+}
+/* End footer */

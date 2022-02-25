@@ -1,0 +1,245 @@
+@media screen and (max-width:1540px){
+    #description-block h1{
+        font-size: 2.35rem;
+    }
+    #mainPhoto-block{
+        width:33%;
+    }
+    #mainPhoto-block article:last-child{
+        height: 81%;
+    }
+}
+@media screen and (max-width:1393px){
+    #description-block h1{
+        font-size: 2.1rem;
+    }
+    #mainPhoto-block article:last-child{
+        height: 75%;
+    }
+    #description-block{
+        width: 57%;
+    }
+    #cover{
+        padding-bottom: 9rem;
+    }
+}
+@media screen and (max-width:1220px){
+    #cover-content{
+        width: 80%;
+    }
+    #mainPhoto-block article:last-child{
+        height: 68.6%;
+    }
+    #description-block{
+        width: 55%;
+    }
+    #description-block h1{
+        font-size: 1.85rem;
+    }
+    #cover{
+        padding-bottom: 4rem;
+    }
+    #aboutMe{
+        height: 55rem;
+    }
+    #about-region > .about-block {
+        width: 47%;
+        height: 19rem;
+    }
+    #about-min-region {
+        width:50%;
+        align-content: center;
+    }
+    #about-min-region > .about-block{
+        width:100%;
+        height: 19rem;
+    }
+    #about-region{
+        height: 38rem;
+        align-items: center;
+    }
+    .verLine {
+        display: none;
+    }
+    .horLine{
+        display: block;
+    }
+    .infoLine:last-of-type{
+        display: none;
+    }
+}
+@media screen and (max-width:1050px){
+    #mainPhoto-block article img{
+        width: 16rem;
+    }
+    #mainPhoto-block article:last-child{
+        height: 65%;
+    }
+    #description-block h1{
+        font-size: 1.80rem;
+    }
+    html{
+        font-size: 0.95em;
+    }
+}
+@media screen and (max-width:1005px){
+    #mainPhoto-block,#description-block{
+        width:70%;
+        height: 28.3rem;
+        text-align: center;
+    }
+    #mainPhoto-block{
+        width:20rem;
+    }
+    #cover-content{
+        flex-direction: column;
+    }
+    #mainPhoto-block article:last-child{
+        height: 76%;
+    }
+    #description-block h1{
+        font-size: 1.80rem;
+    } 
+}
+@media screen and (max-width:791px){
+    html{
+        font-size: 0.85em;
+    }
+    #description-block article{
+        height: 12rem;
+    }
+    #aboutMe{
+        height: 60rem;
+    }
+    #about-region > .about-block {
+        width:76%;
+        margin: 3rem auto;
+    }
+    #about-min-region {
+        width:100%;
+        height: auto;
+    }
+    #about-min-region > .about-block {
+        width:48%;
+    }
+    .verLine{
+        display: block;
+    }
+    .horLine{
+        display: none;
+    }
+}
+@media screen and (max-width:670px){
+    #logo,nav{
+        width:100%;
+    }
+    nav ul li{
+        margin-left:0px;
+    }
+    #logo{
+        text-align: center;
+    }
+    #cover{
+        padding: 13rem 0rem;
+    }
+    #cover{
+        padding-bottom: 0rem;
+    }
+    #mainPhoto-block article:last-child {
+        width: 90%;
+    }
+}
+@media screen and (max-width:490px){
+    #aboutMe{
+        height: 85rem;
+    }
+    #about-region > .about-block {
+        width: 96%;
+    }
+    #about-min-region > .about-block {
+        width:100%;
+    }
+    .verLine{
+        display: none;
+    }
+    .horLine{
+        display: block;
+    }
+}
+@media screen and (max-width:435px){
+    nav{
+        margin-top: 1rem;
+    }
+    nav ul li{
+        padding: 0.2rem 0rem;
+        display: inline-block;
+        width:100%;
+        text-align: center;
+        border-bottom: 2px solid var(--white);
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    #cover-content{
+        margin-top:8rem;
+    }
+    #description-block{
+        width:100%;
+    }
+    .button{
+        color: var(--darkBlue);
+        border: 2px solid var(--darkBlue);
+    }
+    .title-block hr {
+        margin: 0px auto;
+    }
+    .title-block h2 {
+        text-align: center;
+    }
+}
+@media screen and (max-width:370px){
+    #about-region > .about-block {
+        width: 100%;
+        height: 22rem;
+    }
+    #mainPhoto-block article img {
+        width: 15.5rem;
+    }
+    #mainPhoto-block article img {
+        left: 1.1rem;
+    }
+    #mainPhoto-block {
+        width: 18.8rem;
+    }
+    @keyframes floatImage{
+        0% {
+            transform: translateY(-1.5rem) translateX(1.8rem);
+        }
+        50% {
+            transform: translateY(0.5rem) translateX(0.5rem);
+        }
+        100% {
+            transform: translateY(-1.5rem) translateX(1.8rem);
+        }
+    }
+
+}
+@media screen and (max-width:320px){
+    html{
+        font-size: 0.74em;
+    }
+    .center-block{
+        width: 100%;
+    }
+    #mainPhoto-block article img {
+        width: 16.5rem;
+    }
+    #mainPhoto-block article:last-child {
+        height: 77.2%;
+    }
+    #about-region > .about-block {
+        width: 90%;
+    }
+}
