@@ -1,0 +1,3230 @@
+/* Start whole project */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Nunito, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  background-color: #FAF9F6;
+}
+
+.center-block {
+  width: 78%;
+  margin: 0px auto;
+}
+
+header .center-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.textCenter, #aboutMe #about-region #about-min-region > .about-block .info-block, #blueBg #service, #skill, #project {
+  text-align: center;
+}
+
+.d-block, #aboutMe #about-region #about-min-region > .about-block .info-block {
+  display: block;
+  width: 100%;
+}
+
+/* End whole project */
+/* Start header */
+.heightMargin, #logo a img, nav ul {
+  height: 5.7rem;
+  margin: 0.15rem 0rem;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+  margin-left: 1rem;
+}
+
+nav ul li.active-link ::after {
+  opacity: 1;
+  bottom: -1px;
+}
+
+nav ul li.active-link a {
+  color: #259563;
+}
+
+nav ul li::after {
+  content: "";
+  height: 2px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: #259563;
+  border-radius: 1rem;
+  position: absolute;
+  left: 0%;
+  bottom: -20px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover::after, nav ul li.active-link::after {
+  opacity: 1;
+  bottom: -5px;
+}
+
+nav ul li a {
+  color: #232a34;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #259563;
+}
+
+/* End header */
+/* Start cover */
+.green, #cover-content #description-block h1 span {
+  color: #2ca46d;
+  text-decoration: underline;
+}
+
+#cover {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: 0px 0px 0px 0px;
+  padding: 9rem 0rem 12rem 0rem;
+  width: 100%;
+  background-image: url(../img/circleHeader.svg), linear-gradient(171deg, #e5ebf3, #8ea4c2);
+  background-position: 50% 100%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+#cover-content {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px auto 0px auto;
+  padding: 0 0 0 0;
+}
+
+#cover-content #mainPhoto-block {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 27%;
+  height: 35.5rem;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+#cover-content #mainPhoto-block article img {
+  position: absolute;
+  z-index: 1;
+  left: 1.3rem;
+  top: 1rem;
+  width: 93.5%;
+  height: auto;
+  -webkit-animation: floatImage 5s ease-in-out infinite;
+          animation: floatImage 5s ease-in-out infinite;
+}
+
+#cover-content #mainPhoto-block article:last-child {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 0px;
+  width: 96%;
+  height: 83%;
+  border: 2px solid #232a34;
+  border-radius: 1.2rem;
+  border-top: none;
+  border-right: none;
+}
+
+#cover-content #description-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 55%;
+  height: 35.5rem;
+}
+
+#cover-content #description-block article {
+  width: 100%;
+  height: 11rem;
+}
+
+#cover-content #description-block article .button {
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 1.08rem;
+  color: #259563;
+  letter-spacing: 3px;
+  line-height: 1.08rem;
+  margin: 0px 0px 0px 0px;
+  padding: 1.1rem 2.15rem 1.1rem 2.15rem;
+  border: 2px solid #259563;
+  border-radius: 0.88rem;
+}
+
+#cover-content #description-block article .button:active {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+#cover-content #description-block article .button:hover {
+  border-color: #232a34;
+  color: #232a34;
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
+}
+
+#cover-content #description-block h1 {
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #232a34;
+  letter-spacing: 0.1rem;
+  line-height: 3.8rem;
+}
+
+@-webkit-keyframes floatImage {
+  0% {
+    -webkit-transform: translateY(-1.5rem) translateX(3.5rem);
+            transform: translateY(-1.5rem) translateX(3.5rem);
+  }
+  50% {
+    -webkit-transform: translateY(0.5rem) translateX(0.5rem);
+            transform: translateY(0.5rem) translateX(0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1.5rem) translateX(3.5rem);
+            transform: translateY(-1.5rem) translateX(3.5rem);
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    -webkit-transform: translateY(-1.5rem) translateX(3.5rem);
+            transform: translateY(-1.5rem) translateX(3.5rem);
+  }
+  50% {
+    -webkit-transform: translateY(0.5rem) translateX(0.5rem);
+            transform: translateY(0.5rem) translateX(0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1.5rem) translateX(3.5rem);
+            transform: translateY(-1.5rem) translateX(3.5rem);
+  }
+}
+
+/* End cover */
+/* Start about me */
+.titleMain h2, #aboutMe .title-block h2, #contact .center-block .title-block h2 {
+  font-weight: bold;
+  font-size: 1.95rem;
+  color: #232a34;
+  letter-spacing: 0.2rem;
+  line-height: 1.95rem;
+}
+
+.titleMain h3, #aboutMe .title-block h3, #contact .center-block .title-block h3 {
+  font-weight: normal;
+  font-size: 1.05rem;
+  color: #232a34;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+.titleMain hr, #aboutMe .title-block hr, #contact .center-block .title-block hr {
+  width: 17rem;
+  height: 0.25rem;
+  background-color: #259563;
+  border: none;
+  margin: 0.5rem 0rem;
+}
+
+#aboutMe {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  left: 0px;
+  top: -1rem;
+  margin: 0px 0px 0px 0px;
+  padding: 4rem 0rem 4rem 0rem;
+  background-color: #FAF9F6;
+}
+
+#aboutMe #about-region {
+  margin-top: 4rem;
+  width: auto;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#aboutMe #about-region .about-block {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 33%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#aboutMe #about-region > .about-block {
+  border: 2px solid #232a34;
+  border-radius: 1.8rem 0.3rem;
+  padding: 1.3rem;
+  text-align: justify;
+}
+
+#aboutMe #about-region > .about-block i {
+  font-size: 3rem;
+  background-color: #FAF9F6;
+  color: #259563;
+  position: absolute;
+  z-index: 1;
+  right: -1.1rem;
+  top: -0.85rem;
+}
+
+#aboutMe #about-region > .about-block p {
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #232a34;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+}
+
+#aboutMe #about-region > .about-block p span {
+  font-weight: bold;
+}
+
+#aboutMe #about-region #about-min-region {
+  width: 63%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#aboutMe #about-region #about-min-region > .about-block {
+  width: 43%;
+  padding: 0rem 2.2rem;
+}
+
+#aboutMe #about-region #about-min-region > .about-block .info-block p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #232a34;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+}
+
+#aboutMe #about-region #about-min-region .verLine {
+  background-color: #232a34;
+  border-radius: 2rem;
+  width: 0.88rem;
+  height: 11rem;
+  margin: 4rem 0rem;
+}
+
+#aboutMe #about-region #about-min-region .horLine {
+  background-color: #232a34;
+  border-radius: 2rem;
+  height: 0.88rem;
+  width: 11rem;
+  margin: 2rem auto;
+  display: none;
+}
+
+#aboutMe #about-region #about-min-region .infoLine {
+  width: 20%;
+  height: 0.2rem;
+  margin: 0px auto;
+  border: none;
+  border-radius: 1rem;
+  background-color: #259563;
+}
+
+/* End about me */
+/* Start services */
+.lineset, .frame .appHeader .control .min .line, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .min .line, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .min .line, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .min .line, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .min .line, #project #project-blocks .project-block .appFrame .appHeader .control .min .line, .frame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line1, .frame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line2, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line2, .frame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line3, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line3, .frame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line4, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line4, .frame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line1, .frame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line2, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line2 {
+  width: 1rem;
+  height: 0.14rem;
+  background-color: #FAF9F6;
+  border-radius: 1rem;
+}
+
+.title h2, #blueBg #service-title h2, #skill-title h2, #project-title h2 {
+  font-weight: normal;
+  font-size: 0.86rem;
+  color: #259563;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+
+.title h3, #blueBg #service-title h3, #skill-title h3, #project-title h3 {
+  font-weight: bold;
+  font-size: 1.95rem;
+  color: #FAF9F6;
+  letter-spacing: 0.2rem;
+  line-height: 3.2rem;
+}
+
+.title hr, #blueBg #service-title hr, #skill-title hr, #project-title hr {
+  width: 17rem;
+  height: 0.25rem;
+  background: -webkit-gradient(linear, left top, right top, from(#2ca46d), color-stop(15%, #259563), color-stop(67%, #303d4f), to(#232a34));
+  background: linear-gradient(90deg, #2ca46d 0%, #259563 15%, #303d4f 67%, #232a34 100%);
+  border: none;
+  border-radius: 1rem;
+  margin: 10px auto;
+}
+
+.bgIcon, #blueBg > i:first-child, #blueBg > i:last-child {
+  font-weight: bold;
+  font-size: 16rem;
+  color: #259563;
+  letter-spacing: 0px;
+  line-height: 16rem;
+  opacity: 0.16;
+}
+
+.frame, #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame, #project #project-blocks .project-block .appFrame {
+  width: 33.5rem;
+  height: 20.6rem;
+  background-color: #00467d;
+  position: relative;
+}
+
+.frame figure, #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure, #project #project-blocks .project-block .appFrame figure {
+  width: 33rem;
+  height: 18.55rem;
+  position: relative;
+  z-index: 1;
+  left: 0.25rem;
+  top: 2rem;
+}
+
+.frame figure img, #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img, #project #project-blocks .project-block .appFrame figure img {
+  width: inherit;
+  height: 18.3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #232a34;
+  opacity: 0.83;
+}
+
+.frame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #project #project-blocks .project-block .appFrame figure:hover .appHover {
+  width: 33rem;
+  height: 18.3rem;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+  padding: 5rem 0rem;
+}
+
+.frame figure .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover, #project #project-blocks .project-block .appFrame figure .appHover {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 0rem;
+  height: 0rem;
+  padding: 0rem;
+  overflow: hidden;
+  opacity: 0;
+  background-color: rgba(37, 149, 99, 0.77);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.frame figure .appHover p, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover p, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover p, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover p, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover p, #project #project-blocks .project-block .appFrame figure .appHover p {
+  color: #FAF9F6;
+  padding: 0rem 1rem;
+}
+
+.frame figure .appHover p span, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover p span, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover p span, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover p span, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover p span, #project #project-blocks .project-block .appFrame figure .appHover p span {
+  text-transform: uppercase;
+}
+
+.frame figure .appHover p span:last-child, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover p span:last-child, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover p span:last-child, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover p span:last-child, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover p span:last-child, #project #project-blocks .project-block .appFrame figure .appHover p span:last-child {
+  font-weight: bold;
+  font-size: 1.14rem;
+  color: #00467d;
+  letter-spacing: 0.05rem;
+  line-height: 1.14rem;
+}
+
+.frame .appHeader, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader, #project #project-blocks .project-block .appFrame .appHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 31.5rem;
+  height: 2rem;
+  position: absolute;
+  z-index: 1;
+  right: 0.25rem;
+  top: 0rem;
+}
+
+.frame .appHeader p, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader p, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader p, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader p, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader p, #project #project-blocks .project-block .appFrame .appHeader p {
+  color: #FAF9F6;
+}
+
+.frame .appHeader .control, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control, #project #project-blocks .project-block .appFrame .appHeader .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 8.5rem;
+  height: inherit;
+}
+
+.frame .appHeader .control .min, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .min, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .min, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .min, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .min, #project #project-blocks .project-block .appFrame .appHeader .control .min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.frame .appHeader .control .max, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max, #project #project-blocks .project-block .appFrame .appHeader .control .max {
+  width: 1rem;
+  height: 2rem;
+}
+
+.frame .appHeader .control .max-box, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box, #project #project-blocks .project-block .appFrame .appHeader .control .max-box {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.4rem;
+  position: relative;
+}
+
+.frame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line1 {
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  height: 0.13rem;
+  left: 0rem;
+  top: 0.05rem;
+}
+
+.frame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line2, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line2 {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0.5rem;
+  left: -0.48rem;
+}
+
+.frame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line3, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line3, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line3 {
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 0rem;
+  top: 0.97rem;
+}
+
+.frame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line4, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line4, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line4 {
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.frame .appHeader .control .ext, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext, #project #project-blocks .project-block .appFrame .appHeader .control .ext {
+  width: 1rem;
+  height: 2rem;
+}
+
+.frame .appHeader .control .ext-box, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.frame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line1, .frame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line2, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line2 {
+  width: 1.1rem;
+}
+
+.frame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.frame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line2, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line2 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+#blueBg {
+  background-color: #232a34;
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: 4rem 0rem 3rem 0rem;
+  padding: 4rem 0rem 4rem 0rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+#blueBg > i:first-child {
+  position: absolute;
+  z-index: 0;
+  right: 4rem;
+  top: 0.5rem;
+  -webkit-transform: rotate(-44deg);
+          transform: rotate(-44deg);
+}
+
+#blueBg > i:last-child {
+  position: absolute;
+  z-index: 0;
+  left: 3rem;
+  bottom: 1.3rem;
+  -webkit-transform: rotate(38deg);
+          transform: rotate(38deg);
+}
+
+#blueBg #service #service-blocks {
+  margin-top: 6.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 47%;
+  height: auto;
+  margin: 0rem 0rem 4rem 0rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-bottom: 2px solid #303d4f;
+  border-radius: 1rem;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  height: 13rem;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2ca46d;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .web-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .web-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .dat-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .dat-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .seo-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .seo-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .app-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block1 .serviceFrame .app-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover {
+  width: 33rem;
+  height: 18.3rem;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+  padding: 3.5rem 0rem;
+  background-color: rgba(37, 149, 99, 0.87);
+}
+
+#blueBg #service #service-blocks #service-block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 47%;
+  height: auto;
+  margin: 0rem 0rem 4rem 0rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-bottom: 2px solid #303d4f;
+  border-radius: 1rem;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  height: 13rem;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2ca46d;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .web-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .web-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .dat-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .dat-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .seo-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .seo-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .app-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block2 .serviceFrame .app-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover {
+  width: 33rem;
+  height: 18.3rem;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+  padding: 3.5rem 0rem;
+  background-color: rgba(37, 149, 99, 0.87);
+}
+
+#blueBg #service #service-blocks #service-block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 47%;
+  height: auto;
+  margin: 0rem 0rem 4rem 0rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-bottom: 2px solid #303d4f;
+  border-radius: 1rem;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  height: 13rem;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2ca46d;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .web-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .web-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .dat-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .dat-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .seo-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .seo-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .app-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block3 .serviceFrame .app-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover {
+  width: 33rem;
+  height: 18.3rem;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+  padding: 3.5rem 0rem;
+  background-color: rgba(37, 149, 99, 0.87);
+}
+
+#blueBg #service #service-blocks #service-block4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 47%;
+  height: auto;
+  margin: 0rem 0rem 4rem 0rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-bottom: 2px solid #303d4f;
+  border-radius: 1rem;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  height: 13rem;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2ca46d;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .web-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .web-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .dat-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .dat-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .seo-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .seo-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .app-icon {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #259563;
+  margin: 1rem 0rem 2rem 0rem;
+  width: 8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blueBg #service #service-blocks #service-block4 .serviceFrame .app-icon i {
+  font-size: 3.8rem;
+  color: #232a34;
+}
+
+#blueBg #service #service-blocks #service-block4 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover {
+  width: 33rem;
+  height: 18.3rem;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+  padding: 3.5rem 0rem;
+  background-color: rgba(37, 149, 99, 0.87);
+}
+
+/* End services */
+/* Start skills */
+#skill {
+  margin: 3rem auto;
+}
+
+#skill #skill-blocks {
+  margin-top: 6.6rem;
+  margin-bottom: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#skill #skill-blocks .skill-block {
+  width: 10rem;
+}
+
+#skill #skill-blocks .skill-block .skill-frame {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin: 0px auto;
+  background-color: #00467d;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+#skill #skill-blocks .skill-block .skill-frame .percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #259563;
+  border-radius: 50%;
+}
+
+#skill #skill-blocks .skill-block .skill-frame .percent p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #232a34;
+  letter-spacing: 0.1rem;
+  line-height: 1.1rem;
+}
+
+#skill #skill-blocks .skill-block .skill-title {
+  margin: 2rem 0rem;
+  width: 100%;
+}
+
+#skill #skill-blocks .skill-block .skill-title p {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #FAF9F6;
+  letter-spacing: 0.1rem;
+  line-height: 1rem;
+}
+
+#skill #skill-blocks .skill-block:nth-child(1) .skill-frame .percent {
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  z-index: 1;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+#skill #skill-blocks .skill-block:nth-child(2) .skill-frame .percent {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  top: 1rem;
+}
+
+#skill #skill-blocks .skill-block:nth-child(3) .skill-frame .percent {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 1;
+  left: 2.5rem;
+  top: 2.5rem;
+}
+
+#skill #skill-blocks .skill-block:nth-child(4) .skill-frame .percent {
+  width: 7.5rem;
+  height: 7.5rem;
+  position: absolute;
+  z-index: 1;
+  left: 1.25rem;
+  top: 1.25rem;
+}
+
+#skill #skill-blocks .skill-block:nth-child(5) .skill-frame .percent {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  top: 1rem;
+}
+
+#skill #skill-blocks .skill-block:nth-child(6) .skill-frame .percent {
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  z-index: 1;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+/* End skills */
+/* Start projects */
+#project {
+  margin: 3rem auto;
+}
+
+#project #project-blocks {
+  margin-top: 6.6rem;
+  margin-bottom: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#project #project-blocks .project-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 31%;
+  height: auto;
+  margin: 0rem 0rem 4rem 0rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-bottom: 2px solid #303d4f;
+  border-radius: 1rem;
+}
+
+#project #project-blocks .project-block .appFrame {
+  width: 26.2rem;
+  height: 17.3rem;
+}
+
+#project #project-blocks .project-block .appFrame .appHeader {
+  width: 24rem;
+}
+
+#project #project-blocks .project-block .appFrame figure {
+  width: 25.7rem;
+  height: 15rem;
+}
+
+#project #project-blocks .project-block .appFrame figure img {
+  height: 15rem;
+}
+
+#project #project-blocks .project-block .appFrame figure:hover .appHover {
+  width: 25.7rem;
+  height: 15rem;
+  padding: 2.5rem 0rem;
+}
+
+#project #project-blocks .project-block:last-child .appFrame figure .appHover, #project #project-blocks .project-block:last-child .appFrame figure:hover .appHover {
+  width: 25.7rem;
+  height: 15rem;
+  padding: 6.5rem 0rem;
+  font-size: 1.1rem;
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(37, 149, 99, 0.87);
+}
+
+/* End projects */
+/* Start contact */
+#contact {
+  position: relative;
+  z-index: 10;
+  left: 0px;
+  bottom: -1rem;
+  background-color: #FAF9F6;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+#contact .center-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact .center-block .title-block {
+  width: 100%;
+}
+
+#contact .center-block #contactMe {
+  width: 35%;
+}
+
+#contact .center-block #contactMe figure {
+  width: 12rem;
+  height: 12rem;
+  margin: 2rem 2.5rem;
+  border-radius: 50%;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+#contact .center-block #contactMe figure img {
+  width: 15rem;
+}
+
+#contact .center-block #contactMe #contactIcons .contactIcon {
+  width: 100%;
+  text-align: left;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#contact .center-block #contactMe #contactIcons .contactIcon p {
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #232a34;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+#contact .center-block #contactMe #contactIcons .contactIcon p i {
+  margin-right: 10px;
+  color: #259563;
+  width: 1.5rem;
+}
+
+#contact .center-block .verLine {
+  background-color: #232a34;
+  border-radius: 2rem;
+  width: 0.88rem;
+  height: 11rem;
+  margin: 4rem 0rem;
+}
+
+#contact .center-block .horLine {
+  background-color: #232a34;
+  border-radius: 2rem;
+  height: 0.88rem;
+  width: 11rem;
+  margin: 2rem auto;
+  display: none;
+}
+
+#contact .center-block #contactForm {
+  width: 55%;
+  margin-top: 3rem;
+}
+
+#contact .center-block #contactForm form .formRow {
+  display: block;
+  width: 100%;
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+#contact .center-block #contactForm form .formRow input, #contact .center-block #contactForm form .formRow button, #contact .center-block #contactForm form .formRow textarea {
+  border: 2px solid rgba(30, 30, 30, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: #232a34;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+#contact .center-block #contactForm form .formRow input:focus, #contact .center-block #contactForm form .formRow button:focus, #contact .center-block #contactForm form .formRow textarea:focus {
+  border: 2px solid #259563;
+  font-weight: bold;
+}
+
+#contact .center-block #contactForm form .formRow input[type='text'] {
+  width: 37.5%;
+}
+
+#contact .center-block #contactForm form .formRow input[type='text']:last-child {
+  margin-left: 5%;
+}
+
+#contact .center-block #contactForm form .formRow input[type='email'] {
+  width: 80%;
+}
+
+#contact .center-block #contactForm form .formRow textarea {
+  width: 80%;
+  height: 10rem;
+  padding: 1rem;
+}
+
+#contact .center-block #contactForm form .formRow button {
+  color: #232a34;
+  font-size: 1.05rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1.1rem 2.15rem 1.1rem 2.15rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.88rem;
+  background-color: none;
+  text-transform: uppercase;
+}
+
+#contact .center-block #contactForm form .formRow button:hover {
+  cursor: pointer;
+  border: 2px solid #259563;
+  padding: 1.1rem 3.15rem 1.1rem 3.15rem;
+  color: #259563;
+}
+
+#contact .center-block #contactForm form .formRow button:hover i {
+  color: #259563;
+}
+
+/* End contact */
+/* Start footer */
+footer {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: 0px 0px 0px 0px;
+  padding: 12rem 0rem 3rem 0rem;
+  width: 100%;
+  background-image: url(../img/circleFooter.svg), linear-gradient(171deg, #e5ebf3, #8ea4c2);
+  background-position: 50% 0%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+footer .center-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+footer .center-block > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+}
+
+footer .center-block > ul li {
+  margin: 0px 0.6rem;
+}
+
+footer .center-block > ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #232a34;
+  border-radius: 1rem;
+  border: 2px solid #232a34;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+footer .center-block > ul li a i {
+  font-size: 1.15rem;
+}
+
+footer .center-block > ul li:hover a {
+  border-color: #259563;
+  color: #259563;
+}
+
+footer .center-block #foot-blocks {
+  width: 100%;
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .center-block #foot-blocks figure {
+  width: 25%;
+}
+
+footer .center-block #foot-blocks figure a img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+footer .center-block #foot-blocks .links {
+  width: 30%;
+  text-align: center;
+}
+
+footer .center-block #foot-blocks .links p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+footer .center-block #foot-blocks .links ul li {
+  margin-top: 1rem;
+}
+
+footer .center-block #foot-blocks .links ul li a {
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #232a34;
+  letter-spacing: 0.05rem;
+  line-height: 1.1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .center-block #foot-blocks .links ul li a:hover {
+  color: #259563;
+  font-weight: bold;
+}
+
+footer .center-block #copy {
+  margin-top: 4rem;
+}
+
+footer .center-block #copy p {
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #232a34;
+  letter-spacing: 0.1rem;
+  line-height: 1.1rem;
+}
+
+/* End footer */
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 1540px) {
+  #cover-content #mainPhoto-block {
+    width: 33%;
+  }
+  #cover-content #mainPhoto-block article:last-child {
+    height: 81%;
+  }
+  #cover-content #description-block h1 {
+    font-size: 2.25rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
+    width: 30rem;
+    height: 18.6rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 28.5rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
+    width: 29.5rem;
+    height: 16.37rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
+    height: 16.37rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 29.5rem;
+    height: 16.37rem;
+    padding: 2.2rem 0rem;
+  }
+  #project #project-blocks .project-block {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1393px) {
+  #cover {
+    padding-bottom: 9rem;
+  }
+  #cover-content #description-block {
+    width: 57%;
+  }
+  #cover-content #description-block h1 {
+    font-size: 2.1rem;
+  }
+  #cover-content #mainPhoto-block article:last-child {
+    height: 75%;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
+    width: 29rem;
+    height: 18.1rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 27.5rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
+    width: 28.5rem;
+    height: 15.82rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
+    height: 15.82rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 28.5rem;
+    height: 15.82rem;
+  }
+  #skill #skill-blocks .skill-block {
+    width: 30%;
+  }
+  #contact .center-block #contactMe {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #cover {
+    padding-bottom: 4rem;
+  }
+  #cover-content {
+    width: 80%;
+  }
+  #cover-content #description-block {
+    width: 55%;
+  }
+  #cover-content #description-block h1 {
+    font-size: 1.85rem;
+  }
+  #cover-content #mainPhoto-block article:last-child {
+    height: 68.6%;
+  }
+  #aboutMe {
+    height: 55rem;
+  }
+  #aboutMe #about-region {
+    height: 38rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutMe #about-region > .about-block {
+    width: 47%;
+    height: 19rem;
+  }
+  #aboutMe #about-region #about-min-region {
+    width: 50%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #aboutMe #about-region #about-min-region .verLine {
+    display: none;
+  }
+  #aboutMe #about-region #about-min-region .horLine {
+    display: block;
+  }
+  #aboutMe #about-region #about-min-region > .about-block {
+    width: 100%;
+    height: 19rem;
+  }
+  #aboutMe #about-region #about-min-region > .about-block .infoLine:last-of-type {
+    display: none;
+  }
+  #blueBg #service #service-blocks #service-block1, #blueBg #service #service-blocks #service-block2, #blueBg #service #service-blocks #service-block3, #blueBg #service #service-blocks #service-block4 {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #project #project-blocks .project-block .appFrame {
+    width: 23.6rem;
+    height: 16.6rem;
+  }
+  #project #project-blocks .project-block .appFrame .appHeader {
+    width: 22.3rem;
+  }
+  #project #project-blocks .project-block .appFrame figure {
+    width: 23.1rem;
+  }
+  #project #project-blocks .project-block .appFrame figure img {
+    height: 14.34rem;
+  }
+  #project #project-blocks .project-block .appFrame figure:hover .appHover {
+    width: 23.1rem;
+    height: 14.34rem;
+    padding: 1.85rem 0rem;
+  }
+  #project #project-blocks .project-block {
+    width: 49%;
+  }
+  #project #project-blocks .project-block:last-child .appFrame figure .appHover, #project #project-blocks .project-block:last-child .appFrame figure:hover .appHover {
+    width: 23.1rem;
+    height: 14.34rem;
+  }
+  footer .center-block #foot-blocks figure {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1061px) {
+  html {
+    font-size: 0.95em;
+  }
+  #cover #cover-content #mainPhoto-block article img {
+    width: 16rem;
+  }
+  #cover #cover-content #mainPhoto-block article:last-child {
+    height: 65%;
+  }
+  #cover #cover-content #description-block h1 {
+    font-size: 1.80rem;
+    letter-spacing: 0.05rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame, #project #project-blocks .project-block:nth-child(6) .appFrame {
+    height: 17.1rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure img, #project #project-blocks .project-block:nth-child(6) .appFrame figure img {
+    height: 14.77rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure:hover .appHover, #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover {
+    width: 23.1rem;
+    height: 14.77rem;
+  }
+  #project #project-blocks .project-block:last-child .appFrame figure .appHover, #project #project-blocks .project-block:last-child .appFrame figure:hover .appHover {
+    width: 23.1rem;
+    height: 14.77rem;
+  }
+  #contact .center-block #contactMe {
+    width: 42%;
+  }
+  footer .center-block #foot-blocks figure a img {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  #cover #cover-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #cover #cover-content #mainPhoto-block {
+    width: 20rem;
+    height: 28.3rem;
+    text-align: center;
+  }
+  #cover #cover-content #mainPhoto-block article:last-child {
+    height: 75.5%;
+  }
+  #cover #cover-content #description-block {
+    width: 70%;
+    height: 28.3rem;
+    text-align: center;
+  }
+  #cover #cover-content #description-block article .button {
+    padding: 1.47rem 2.5rem;
+  }
+  #cover #cover-content #description-block h1 {
+    font-size: 1.80rem;
+  }
+  #blueBg > i:first-child, #blueBg > i:last-child {
+    font-size: 14rem;
+    line-height: 14rem;
+  }
+  #blueBg #service #service-blocks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #blueBg #service #service-blocks #service-block1, #blueBg #service #service-blocks #service-block2, #blueBg #service #service-blocks #service-block3, #blueBg #service #service-blocks #service-block4 {
+    width: 75%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #project #project-blocks .project-block {
+    width: 50%;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure:hover .appHover {
+    padding: 3rem 0rem;
+  }
+  #contact .center-block #contactMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 85%;
+    margin: 0px auto;
+  }
+  #contact .center-block #contactMe #contactIcons {
+    width: 50%;
+  }
+  #contact .center-block .verLine {
+    display: none;
+  }
+  #contact .center-block .horLine {
+    display: block;
+  }
+  #contact .center-block #contactForm {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  footer .center-block #foot-blocks .links:nth-child(1) ul li {
+    margin-top: 2.3rem;
+  }
+  footer .center-block #foot-blocks .links i {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 791px) {
+  html {
+    font-size: 0.85em;
+  }
+  #cover #cover-content #description-block article {
+    height: 12rem;
+  }
+  #aboutMe {
+    height: 60rem;
+  }
+  #aboutMe #about-region > .about-block {
+    width: 76%;
+    margin: 3rem auto;
+  }
+  #aboutMe #about-region #about-min-region {
+    width: 100%;
+    height: auto;
+  }
+  #aboutMe #about-region #about-min-region > .about-block {
+    width: 48%;
+  }
+  #aboutMe #about-region #about-min-region .verLine {
+    display: block;
+  }
+  #aboutMe #about-region #about-min-region .horLine {
+    display: none;
+  }
+  #blueBg #service #service-blocks #service-block1, #blueBg #service #service-blocks #service-block2, #blueBg #service #service-blocks #service-block3, #blueBg #service #service-blocks #service-block4 {
+    width: 80%;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
+    width: 32.15rem;
+    height: 19.7rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 30rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
+    width: 31.6rem;
+    height: 17.32rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
+    height: 17.32rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 31.6rem;
+    height: 17.32rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) {
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame {
+    width: 26.2rem;
+    height: 19rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame .appHeader {
+    width: 24rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure {
+    width: 25.7rem;
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure img {
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure:hover .appHover {
+    width: 25.7rem;
+    height: 16.5rem;
+    padding: 3rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) {
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame {
+    width: 26.2rem;
+    height: 19rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame .appHeader {
+    width: 24rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure {
+    width: 25.7rem;
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure img {
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure:hover .appHover {
+    width: 25.7rem;
+    height: 16.5rem;
+    padding: 3rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) {
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame {
+    width: 26.2rem;
+    height: 19rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame .appHeader {
+    width: 24rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure {
+    width: 25.7rem;
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure img {
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure:hover .appHover {
+    width: 25.7rem;
+    height: 16.5rem;
+    padding: 3rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) {
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame {
+    width: 26.2rem;
+    height: 19rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame .appHeader {
+    width: 24rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure {
+    width: 25.7rem;
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure img {
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure:hover .appHover {
+    width: 25.7rem;
+    height: 16.5rem;
+    padding: 3rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) {
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame {
+    width: 26.2rem;
+    height: 19rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame .appHeader {
+    width: 24rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure {
+    width: 25.7rem;
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure img {
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure:hover .appHover {
+    width: 25.7rem;
+    height: 16.5rem;
+    padding: 3rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) {
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame {
+    width: 26.2rem;
+    height: 19rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame .appHeader {
+    width: 24rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure {
+    width: 25.7rem;
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure img {
+    height: 16.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover {
+    width: 25.7rem;
+    height: 16.5rem;
+    padding: 3rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover, #project #project-blocks .project-block:nth-child(6) .appFrame figure .appHover {
+    width: 25.7rem;
+    height: 16.5rem;
+    padding: 6.5rem 0rem;
+  }
+  #contact .center-block #contactMe {
+    width: 90%;
+  }
+  #contact .center-block #contactMe #contactIcons {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #logo {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    height: 5rem;
+  }
+  nav ul li {
+    margin-left: 0px;
+  }
+  nav ul li a {
+    font-size: 1.3rem;
+  }
+  #logo {
+    text-align: center;
+  }
+  #cover {
+    padding: 13rem 0rem;
+    padding-bottom: 0rem;
+  }
+  #cover #cover-content #mainPhoto-block article:last-child {
+    width: 88%;
+  }
+  #blueBg > i:first-child, #blueBg > i:last-child {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+  #blueBg #service #service-blocks #service-block1, #blueBg #service #service-blocks #service-block2, #blueBg #service #service-blocks #service-block3, #blueBg #service #service-blocks #service-block4 {
+    width: 100%;
+  }
+  #skill #skill-blocks .skill-block {
+    width: 49%;
+  }
+  #project #project-blocks .project-block:nth-child(1) {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(2) {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(3) {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(4) {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(5) {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(6) {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+  #contact .center-block #contactMe {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .center-block #contactMe #contactIcons {
+    width: 60%;
+  }
+  footer .center-block > ul {
+    width: 80%;
+  }
+  footer .center-block #foot-blocks .links {
+    width: 100%;
+    padding: 1rem 0rem;
+    border: 1px solid #303d4f;
+    border-radius: 1rem;
+  }
+  footer .center-block #foot-blocks figure {
+    margin: 3rem auto;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #cover #cover-content #description-block h1 {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+  #aboutMe {
+    height: 85rem;
+  }
+  #aboutMe #about-region > .about-block {
+    width: 96%;
+  }
+  #aboutMe #about-region #about-min-region .about-block {
+    width: 100%;
+  }
+  #aboutMe #about-region #about-min-region .verLine {
+    display: none;
+  }
+  #aboutMe #about-region #about-min-region .horLine {
+    display: block;
+  }
+  #blueBg > i:first-child {
+    right: 2.2rem;
+  }
+  #blueBg > i:last-child {
+    left: 1.2rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
+    width: 25.5rem;
+    height: 16.4rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 24rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
+    width: 25rem;
+    height: 14.1rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
+    height: 14.1rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 25rem;
+    height: 14.1rem;
+    padding: 0.25rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(2) {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(3) {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(4) {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(5) {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  #project #project-blocks .project-block:nth-child(6) {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  #contact .center-block #contactMe #contactIcons {
+    width: 100%;
+  }
+  #contact .center-block #contactMe #contactIcons .contactIcon {
+    text-align: center;
+  }
+  #contact .center-block #contactMe #contactIcons .contactIcon p i {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  #contact .center-block #contactForm form .formRow input[type='text'], #contact .center-block #contactForm form .formRow input[type='email'], #contact .center-block #contactForm form .formRow textarea {
+    width: 90%;
+  }
+  #contact .center-block #contactForm form .formRow input[type='text']:last-child {
+    margin-left: 0%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav {
+    margin-top: 1rem;
+    height: 12rem;
+  }
+  nav ul {
+    width: 100%;
+  }
+  nav ul li {
+    padding: 0.2rem 0rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #FAF9F6;
+  }
+  nav ul li:hover::after, nav ul li.active-link::after {
+    opacity: 0;
+  }
+  #cover {
+    padding: 25rem 0rem 0rem 0rem;
+  }
+  #description-block {
+    width: 100%;
+  }
+  .button {
+    color: #259563;
+    border: 2px solid #259563;
+  }
+  #aboutMe .title-block hr {
+    margin: 0.5rem auto;
+  }
+  #aboutMe .title-block h2 {
+    text-align: center;
+  }
+  #blueBg > i:first-child, #blueBg > i:last-child {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+  #blueBg > i:first-child {
+    right: 1.7rem;
+  }
+  #blueBg #service #service-blocks #service-block1, #blueBg #service #service-blocks #service-block2, #blueBg #service #service-blocks #service-block3, #blueBg #service #service-blocks #service-block4 {
+    border-radius: 0rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .serviceFrame .web-icon, #blueBg #service #service-blocks #service-block1 .serviceFrame .dat-icon, #blueBg #service #service-blocks #service-block1 .serviceFrame .app-icon, #blueBg #service #service-blocks #service-block1 .serviceFrame .seo-icon, #blueBg #service #service-blocks #service-block2 .serviceFrame .web-icon, #blueBg #service #service-blocks #service-block2 .serviceFrame .dat-icon, #blueBg #service #service-blocks #service-block2 .serviceFrame .app-icon, #blueBg #service #service-blocks #service-block2 .serviceFrame .seo-icon, #blueBg #service #service-blocks #service-block3 .serviceFrame .web-icon, #blueBg #service #service-blocks #service-block3 .serviceFrame .dat-icon, #blueBg #service #service-blocks #service-block3 .serviceFrame .app-icon, #blueBg #service #service-blocks #service-block3 .serviceFrame .seo-icon, #blueBg #service #service-blocks #service-block4 .serviceFrame .web-icon, #blueBg #service #service-blocks #service-block4 .serviceFrame .dat-icon, #blueBg #service #service-blocks #service-block4 .serviceFrame .app-icon, #blueBg #service #service-blocks #service-block4 .serviceFrame .seo-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .serviceFrame .web-icon i, #blueBg #service #service-blocks #service-block1 .serviceFrame .dat-icon i, #blueBg #service #service-blocks #service-block1 .serviceFrame .app-icon i, #blueBg #service #service-blocks #service-block1 .serviceFrame .seo-icon i, #blueBg #service #service-blocks #service-block2 .serviceFrame .web-icon i, #blueBg #service #service-blocks #service-block2 .serviceFrame .dat-icon i, #blueBg #service #service-blocks #service-block2 .serviceFrame .app-icon i, #blueBg #service #service-blocks #service-block2 .serviceFrame .seo-icon i, #blueBg #service #service-blocks #service-block3 .serviceFrame .web-icon i, #blueBg #service #service-blocks #service-block3 .serviceFrame .dat-icon i, #blueBg #service #service-blocks #service-block3 .serviceFrame .app-icon i, #blueBg #service #service-blocks #service-block3 .serviceFrame .seo-icon i, #blueBg #service #service-blocks #service-block4 .serviceFrame .web-icon i, #blueBg #service #service-blocks #service-block4 .serviceFrame .dat-icon i, #blueBg #service #service-blocks #service-block4 .serviceFrame .app-icon i, #blueBg #service #service-blocks #service-block4 .serviceFrame .seo-icon i {
+    font-size: 2.8rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 21rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
+    width: 23.3rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
+    height: 13.2rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    font-size: 0.9rem;
+  }
+  #skill #skill-blocks .skill-block {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #303d4f;
+  }
+  #project #project-blocks .project-block:nth-child(1) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure {
+    width: 23.3rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure:hover .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure {
+    width: 23.3rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure:hover .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure {
+    width: 23.3rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure:hover .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure {
+    width: 23.3rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure:hover .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure {
+    width: 23.3rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure:hover .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure {
+    width: 23.3rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover, #project #project-blocks .project-block:nth-child(6) .appFrame figure .appHover {
+    width: 23.3rem;
+    height: 13.2rem;
+    padding: 5.5rem 0rem;
+  }
+  #contact .center-block .title-block hr {
+    margin: 0.5rem auto;
+  }
+  #contact .center-block .title-block h2, #contact .center-block .title-block h3 {
+    text-align: center;
+  }
+  footer .center-block > ul {
+    width: 90%;
+  }
+  footer .center-block #foot-blocks figure {
+    margin: 3rem auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #service #service-blocks #service-block1 .appFrame, #service #service-blocks #service-block2 .appFrame, #service #service-blocks #service-block3 .appFrame, #service #service-blocks #service-block4 .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #service #service-blocks #service-block1 .appFrame .appHeader, #service #service-blocks #service-block2 .appFrame .appHeader, #service #service-blocks #service-block3 .appFrame .appHeader, #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 21rem;
+  }
+  #service #service-blocks #service-block1 .appFrame figure, #service #service-blocks #service-block2 .appFrame figure, #service #service-blocks #service-block3 .appFrame figure, #service #service-blocks #service-block4 .appFrame figure {
+    width: 21.9rem;
+  }
+  #service #service-blocks #service-block1 .appFrame figure img, #service #service-blocks #service-block2 .appFrame figure img, #service #service-blocks #service-block3 .appFrame figure img, #service #service-blocks #service-block4 .appFrame figure img {
+    height: 13.2rem;
+  }
+  #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #service #service-blocks #service-block1 .appFrame figure .appHover, #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #service #service-blocks #service-block2 .appFrame figure .appHover, #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #service #service-blocks #service-block3 .appFrame figure .appHover, #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    font-size: 0.9rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure {
+    width: 21.9rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure:hover .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure {
+    width: 21.9rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure:hover .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure {
+    width: 21.9rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure:hover .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure {
+    width: 21.9rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure:hover .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure {
+    width: 21.9rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure:hover .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) {
+    border-radius: 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame {
+    width: 24rem;
+    height: 15.6rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame .appHeader {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure {
+    width: 21.9rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure img {
+    height: 13.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    padding: 1.45rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover, #project #project-blocks .project-block:nth-child(6) .appFrame figure .appHover {
+    width: 21.9rem;
+    height: 13.2rem;
+    padding: 5.5rem 0rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .center-block {
+    width: 85%;
+  }
+  #cover #cover-content {
+    width: auto;
+  }
+  #cover #cover-content #description-block h1 {
+    line-height: 3.5rem;
+  }
+  #cover #cover-content #mainPhoto-block {
+    width: 18.8rem;
+  }
+  #cover #cover-content #mainPhoto-block article img {
+    width: 15.5rem;
+    left: 1.1rem;
+  }
+  #aboutMe #about-region > .about-block {
+    width: 100%;
+    height: 22rem;
+  }
+  @-webkit-keyframes floatImage {
+    0% {
+      -webkit-transform: translateY(-1.5rem) translateX(1.8rem);
+              transform: translateY(-1.5rem) translateX(1.8rem);
+    }
+    50% {
+      -webkit-transform: translateY(0.5rem) translateX(0.5rem);
+              transform: translateY(0.5rem) translateX(0.5rem);
+    }
+    100% {
+      -webkit-transform: translateY(-1.5rem) translateX(1.8rem);
+              transform: translateY(-1.5rem) translateX(1.8rem);
+    }
+  }
+  @keyframes floatImage {
+    0% {
+      -webkit-transform: translateY(-1.5rem) translateX(1.8rem);
+              transform: translateY(-1.5rem) translateX(1.8rem);
+    }
+    50% {
+      -webkit-transform: translateY(0.5rem) translateX(0.5rem);
+              transform: translateY(0.5rem) translateX(0.5rem);
+    }
+    100% {
+      -webkit-transform: translateY(-1.5rem) translateX(1.8rem);
+              transform: translateY(-1.5rem) translateX(1.8rem);
+    }
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
+    width: 25rem;
+    height: 15.5rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 20rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
+    width: 21rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
+    height: 13.1rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame {
+    width: 25rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame .appHeader {
+    width: 20rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure img {
+    height: 13.1rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure:hover .appHover {
+    width: 21rem;
+    height: 13.1rem;
+    padding: 1.5rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame {
+    width: 25rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame .appHeader {
+    width: 20rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure img {
+    height: 13.1rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure:hover .appHover {
+    width: 21rem;
+    height: 13.1rem;
+    padding: 1.5rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame {
+    width: 25rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame .appHeader {
+    width: 20rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure img {
+    height: 13.1rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure:hover .appHover {
+    width: 21rem;
+    height: 13.1rem;
+    padding: 1.5rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame {
+    width: 25rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame .appHeader {
+    width: 20rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure img {
+    height: 13.1rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure:hover .appHover {
+    width: 21rem;
+    height: 13.1rem;
+    padding: 1.5rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame {
+    width: 25rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame .appHeader {
+    width: 20rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure img {
+    height: 13.1rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure:hover .appHover {
+    width: 21rem;
+    height: 13.1rem;
+    padding: 1.5rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame {
+    width: 25rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame .appHeader {
+    width: 20rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure {
+    width: 21rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure img {
+    height: 13.1rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover {
+    width: 21rem;
+    height: 13.1rem;
+    padding: 1.5rem 0rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover, #project #project-blocks .project-block:nth-child(6) .appFrame figure .appHover {
+    width: 21rem;
+    height: 13.1rem;
+    padding: 5.5rem 0rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 0.74em;
+  }
+  .center-block {
+    width: 95%;
+  }
+  .button {
+    padding: 1.5rem 2.8rem;
+  }
+  #cover #cover-content #mainPhoto-block article img {
+    width: 16.5rem;
+  }
+  #cover #cover-content #mainPhoto-block article:last-child {
+    height: 77.2%;
+  }
+  #aboutMe #about-region > .about-block {
+    width: 95%;
+  }
+  #blueBg > i:first-child, #blueBg > i:last-child {
+    font-size: 6.3rem;
+    line-height: 6.3rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
+    width: 24rem;
+    height: 15.5rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
+    width: 22rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
+    width: 23.2rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
+    height: 13rem;
+  }
+  #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
+    width: 23.2rem;
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame {
+    width: 24rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame .appHeader {
+    width: 22rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure {
+    width: 23.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure img {
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(1) .appFrame figure:hover .appHover {
+    width: 23.2rem;
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame {
+    width: 24rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame .appHeader {
+    width: 22rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure {
+    width: 23.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure img {
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(2) .appFrame figure:hover .appHover {
+    width: 23.2rem;
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame {
+    width: 24rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame .appHeader {
+    width: 22rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure {
+    width: 23.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure img {
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure:hover .appHover {
+    width: 23.2rem;
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame {
+    width: 24rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame .appHeader {
+    width: 22rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure {
+    width: 23.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure img {
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(4) .appFrame figure:hover .appHover {
+    width: 23.2rem;
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame {
+    width: 24rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame .appHeader {
+    width: 22rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure {
+    width: 23.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure img {
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(5) .appFrame figure:hover .appHover {
+    width: 23.2rem;
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame {
+    width: 24rem;
+    height: 15.5rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame .appHeader {
+    width: 22rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure {
+    width: 23.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure img {
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover {
+    width: 23.2rem;
+    height: 13rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame {
+    height: 16.2rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure {
+    height: 13.8rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure img {
+    height: 13.8rem;
+  }
+  #project #project-blocks .project-block:nth-child(3) .appFrame figure:hover .appHover {
+    width: 23.2rem;
+    height: 13.8rem;
+  }
+  #project #project-blocks .project-block:nth-child(6) .appFrame figure:hover .appHover, #project #project-blocks .project-block:nth-child(6) .appFrame figure .appHover {
+    width: 23.2rem;
+    height: 13rem;
+    padding: 5.5rem 0rem;
+  }
+  #contact .center-block #contactMe figure img {
+    width: 17rem;
+    width: 20rem;
+    margin-left: -25px;
+    margin-top: -10px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
