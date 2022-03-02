@@ -71,11 +71,11 @@ $lightBlue: #00467d;
     background-color: $darkBlue;
     border-radius: 2rem;
     @if($value==0){
-      width: 0.88rem;
+      width: 0.65rem;
       height: 11rem;
       margin: 4rem 0rem;
     }@else if ($value==1){
-      height: 0.88rem;
+      height: 0.65rem;
       width: 11rem;
       margin: 2rem auto;
       display: none;
@@ -163,7 +163,6 @@ $lightBlue: #00467d;
   /* Start cover */
   .green {
     color: $green;
-    text-decoration: underline;
   }
   @mixin flexContent{
     display: flex;
@@ -198,12 +197,10 @@ $lightBlue: #00467d;
             @include pos(absolute,1,10px, 0px);
             @include widHei(96%, 83%);
             @include borderSet(2px,solid ,$darkBlue , 1.2rem);
-            border-top: none;
-            border-right: none;
-            // border:{
-            //   top: none;
-            //   right: none;
-            // }
+            border:{
+              top: none;
+              right: none;
+            }
           }
         }
       }
@@ -222,9 +219,10 @@ $lightBlue: #00467d;
               transform: translateY(2rem);
             }
             &:hover {
-              border-color: $darkBlue;
-              color: $darkBlue;
-              transform: translateY(0.3rem);
+              border-color: rgba(30,30,30,0.5);
+              color: $white;
+              background-color: $darkGreen;
+              transform: translateY(0.1rem);
             }
           }
         }
@@ -412,7 +410,12 @@ $lightBlue: #00467d;
                       align-items: center;
                       & .line{
                         @extend .lineset;
+                        &:hover{
+                          background-color: $green;
+                          cursor: pointer;
+                        }
                       }
+                      
                     }
                     .max{
                       @include widHei(1rem, 2rem);
@@ -420,6 +423,12 @@ $lightBlue: #00467d;
                         @include widHei(1rem, 1rem);
                         margin-top: 0.4rem;
                         position: relative;
+                        &:hover{
+                          .line1,.line2,.line3,.line4{
+                            background-color: $green;
+                            cursor: pointer;
+                          }
+                        }   
                         @for $i from 0 through 3{
                           .line#{$i+1}{
                             position: absolute;
@@ -435,7 +444,7 @@ $lightBlue: #00467d;
                             }@else{
                               left: 0rem;
                               top:0.97rem;
-                            }          
+                            }       
                           }
                         }
                       }
@@ -451,6 +460,12 @@ $lightBlue: #00467d;
                           @extend .lineset;
                           width: 1.1rem;
                         }
+                        &:hover{
+                          .line1,.line2{
+                            background-color: red;
+                            cursor: pointer;
+                          }
+                        }  
                         .line1{
                           transform: rotate(45deg);
                           position: absolute;

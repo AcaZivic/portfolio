@@ -128,7 +128,6 @@ nav ul li a:hover {
 /* Start cover */
 .green, #cover-content #description-block h1 span {
   color: #2ca46d;
-  text-decoration: underline;
 }
 
 #cover {
@@ -235,10 +234,11 @@ nav ul li a:hover {
 }
 
 #cover-content #description-block article .button:hover {
-  border-color: #232a34;
-  color: #232a34;
-  -webkit-transform: translateY(0.3rem);
-          transform: translateY(0.3rem);
+  border-color: rgba(30, 30, 30, 0.5);
+  color: #FAF9F6;
+  background-color: #259563;
+  -webkit-transform: translateY(0.1rem);
+          transform: translateY(0.1rem);
 }
 
 #cover-content #description-block h1 {
@@ -415,7 +415,7 @@ nav ul li a:hover {
 #aboutMe #about-region #about-min-region .verLine {
   background-color: #232a34;
   border-radius: 2rem;
-  width: 0.88rem;
+  width: 0.65rem;
   height: 11rem;
   margin: 4rem 0rem;
 }
@@ -423,7 +423,7 @@ nav ul li a:hover {
 #aboutMe #about-region #about-min-region .horLine {
   background-color: #232a34;
   border-radius: 2rem;
-  height: 0.88rem;
+  height: 0.65rem;
   width: 11rem;
   margin: 2rem auto;
   display: none;
@@ -596,6 +596,11 @@ nav ul li a:hover {
           align-items: center;
 }
 
+.frame .appHeader .control .min .line:hover, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .min .line:hover, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .min .line:hover, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .min .line:hover, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .min .line:hover, #project #project-blocks .project-block .appFrame .appHeader .control .min .line:hover {
+  background-color: #2ca46d;
+  cursor: pointer;
+}
+
 .frame .appHeader .control .max, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max, #project #project-blocks .project-block .appFrame .appHeader .control .max {
   width: 1rem;
   height: 2rem;
@@ -606,6 +611,11 @@ nav ul li a:hover {
   height: 1rem;
   margin-top: 0.4rem;
   position: relative;
+}
+
+.frame .appHeader .control .max-box:hover .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box:hover .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box:hover .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box:hover .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box:hover .line1, #project #project-blocks .project-block .appFrame .appHeader .control .max-box:hover .line1, .frame .appHeader .control .max-box:hover .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box:hover .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box:hover .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box:hover .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box:hover .line2, #project #project-blocks .project-block .appFrame .appHeader .control .max-box:hover .line2, .frame .appHeader .control .max-box:hover .line3, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box:hover .line3, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box:hover .line3, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box:hover .line3, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box:hover .line3, #project #project-blocks .project-block .appFrame .appHeader .control .max-box:hover .line3, .frame .appHeader .control .max-box:hover .line4, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box:hover .line4, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box:hover .line4, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box:hover .line4, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box:hover .line4, #project #project-blocks .project-block .appFrame .appHeader .control .max-box:hover .line4 {
+  background-color: #2ca46d;
+  cursor: pointer;
 }
 
 .frame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .max-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .max-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .max-box .line1 {
@@ -655,6 +665,11 @@ nav ul li a:hover {
 
 .frame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line1, .frame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line2, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line2 {
   width: 1.1rem;
+}
+
+.frame .appHeader .control .ext-box:hover .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box:hover .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box:hover .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box:hover .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box:hover .line1, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box:hover .line1, .frame .appHeader .control .ext-box:hover .line2, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box:hover .line2, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box:hover .line2, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box:hover .line2, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box:hover .line2, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box:hover .line2 {
+  background-color: red;
+  cursor: pointer;
 }
 
 .frame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block1 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader .control .ext-box .line1, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader .control .ext-box .line1, #project #project-blocks .project-block .appFrame .appHeader .control .ext-box .line1 {
@@ -1632,7 +1647,7 @@ nav ul li a:hover {
 #contact .center-block .verLine {
   background-color: #232a34;
   border-radius: 2rem;
-  width: 0.88rem;
+  width: 0.65rem;
   height: 11rem;
   margin: 4rem 0rem;
 }
@@ -1640,7 +1655,7 @@ nav ul li a:hover {
 #contact .center-block .horLine {
   background-color: #232a34;
   border-radius: 2rem;
-  height: 0.88rem;
+  height: 0.65rem;
   width: 11rem;
   margin: 2rem auto;
   display: none;
