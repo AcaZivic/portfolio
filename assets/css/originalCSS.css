@@ -2746,20 +2746,20 @@ footer .center-block #copy p {
   }
   
   @media screen and (max-width: 425px) {
-    #service #service-blocks #service-block1 .appFrame, #service #service-blocks #service-block2 .appFrame, #service #service-blocks #service-block3 .appFrame, #service #service-blocks #service-block4 .appFrame {
+    #blueBg #service #service-blocks #service-block1 .appFrame, #blueBg #service #service-blocks #service-block2 .appFrame, #blueBg #service #service-blocks #service-block3 .appFrame, #blueBg #service #service-blocks #service-block4 .appFrame {
       width: 24rem;
       height: 15.6rem;
     }
-    #service #service-blocks #service-block1 .appFrame .appHeader, #service #service-blocks #service-block2 .appFrame .appHeader, #service #service-blocks #service-block3 .appFrame .appHeader, #service #service-blocks #service-block4 .appFrame .appHeader {
+    #blueBg #service #service-blocks #service-block1 .appFrame .appHeader, #blueBg #service #service-blocks #service-block2 .appFrame .appHeader, #blueBg #service #service-blocks #service-block3 .appFrame .appHeader, #blueBg #service #service-blocks #service-block4 .appFrame .appHeader {
       width: 21rem;
     }
-    #service #service-blocks #service-block1 .appFrame figure, #service #service-blocks #service-block2 .appFrame figure, #service #service-blocks #service-block3 .appFrame figure, #service #service-blocks #service-block4 .appFrame figure {
+    #blueBg #service #service-blocks #service-block1 .appFrame figure, #blueBg #service #service-blocks #service-block2 .appFrame figure, #blueBg #service #service-blocks #service-block3 .appFrame figure, #blueBg #service #service-blocks #service-block4 .appFrame figure {
       width: 21.9rem;
     }
-    #service #service-blocks #service-block1 .appFrame figure img, #service #service-blocks #service-block2 .appFrame figure img, #service #service-blocks #service-block3 .appFrame figure img, #service #service-blocks #service-block4 .appFrame figure img {
+    #blueBg #service #service-blocks #service-block1 .appFrame figure img, #blueBg #service #service-blocks #service-block2 .appFrame figure img, #blueBg #service #service-blocks #service-block3 .appFrame figure img, #blueBg #service #service-blocks #service-block4 .appFrame figure img {
       height: 13.2rem;
     }
-    #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #service #service-blocks #service-block1 .appFrame figure .appHover, #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #service #service-blocks #service-block2 .appFrame figure .appHover, #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #service #service-blocks #service-block3 .appFrame figure .appHover, #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #service #service-blocks #service-block4 .appFrame figure .appHover {
+    #blueBg #service #service-blocks #service-block1 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block1 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block2 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block3 .appFrame figure .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure:hover .appHover, #blueBg #service #service-blocks #service-block4 .appFrame figure .appHover {
       width: 21.9rem;
       height: 13.2rem;
       font-size: 0.9rem;
